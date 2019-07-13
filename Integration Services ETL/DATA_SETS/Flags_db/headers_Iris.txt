@@ -1,0 +1,1 @@
+Name,Landmass,Zone,Area,Population,Language,Religion,Bars,Stripes,Colours,Red,Green,Blue,Gold,White,Black,Orange,Mainhue,Circles,Crosses,Saltires,Quarters,Sunstars,Crescent,Triangle,Icon,Animate,Text,TopleftColour,BotrightColour

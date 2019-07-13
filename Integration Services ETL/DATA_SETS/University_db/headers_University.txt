@@ -1,0 +1,1 @@
+University-name,State,Location,Control,Number-of-students,Male:female(ratio),Student:faculty(ratio),Sat-verbal,Sat-math,Expenses,Percent-financial-aid,Number-of-applicants,Percent-admittance,Percent-enrolled,Academics,Social,Quality-of-life,Academic-emphasis
