@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{A3A8F0FC-F931-440E-9820-C4C763DA64CC}">
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{3B728608-8F43-4F8C-B8A6-C263716440BC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -308,6 +308,297 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B99E35DA-6703-45CA-AF40-3DA31836F1D3}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:Unicode="True"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\jaqbs\source\repos\SSIS_Projects\Integration Services ETL\DATA_SETS\Flags_db\flag.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Name"
+              DTS:DTSID="{7ECB8F7B-3FA0-4706-8123-9865A5423604}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Landmass"
+              DTS:DTSID="{8EA0AD6F-FA33-483E-8870-15B1AE557CAD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Zone"
+              DTS:DTSID="{97232AF2-049D-4F50-84B9-D3901875A1CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Area"
+              DTS:DTSID="{C7BA7CDE-3630-4C71-B2E9-021988D6E513}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Population"
+              DTS:DTSID="{EE92273A-84A7-492B-8310-5D35A854C787}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Language"
+              DTS:DTSID="{2A9B7257-6AAA-4878-873A-DB529817BB09}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Religion"
+              DTS:DTSID="{72839CE6-B751-4098-BE88-529405289545}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Bars"
+              DTS:DTSID="{C0EC561A-5315-4067-AF2F-B38256B79AF7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Stripes"
+              DTS:DTSID="{07D052E5-1F9F-401E-9AB1-9B5FB27FF7EA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Colours"
+              DTS:DTSID="{7A782880-A786-475C-BB29-B77B7078F8FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Red"
+              DTS:DTSID="{ADD9DCF6-BA8B-4C9D-8E18-1526F7FBE484}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Green"
+              DTS:DTSID="{FF5B22DB-C345-4CB3-B982-81E9238E1AEB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Blue"
+              DTS:DTSID="{CE5CFF12-4C19-47A1-8D8A-1F8A8AA86056}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gold"
+              DTS:DTSID="{92A60FD4-6FDD-40BD-A946-F268AF552BBF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="White"
+              DTS:DTSID="{DBC9838E-261C-4E16-9C09-F5E20BCBEF4E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Black"
+              DTS:DTSID="{FB173D11-BCEF-49E2-AD10-631E96969165}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Orange"
+              DTS:DTSID="{65C76162-A4BE-4490-80CE-21215B2EE208}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mainhue"
+              DTS:DTSID="{13E1CA15-B877-4FF2-B12B-3F56E49C64E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Circles"
+              DTS:DTSID="{1EF86009-7CC6-4B96-B56F-502216E07F46}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crosses"
+              DTS:DTSID="{08B39DF0-E4D3-4A9F-8022-19F08F04CF3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Saltires"
+              DTS:DTSID="{8874047E-49CA-45C7-852F-B803D34E57F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quarters"
+              DTS:DTSID="{4151CB52-51E0-4624-A829-0C741F491C18}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sunstars"
+              DTS:DTSID="{B260F6A5-144B-4AD2-BB38-527BBAD6B35C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crescent"
+              DTS:DTSID="{1DDDC74C-7136-4D06-9AE7-0BB9DF25F61F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Triangle"
+              DTS:DTSID="{91931887-5AC9-4382-B98B-7F12BF9CD3B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Icon"
+              DTS:DTSID="{A02D3120-FBEB-468F-A503-A8A5FE1566F3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Animate"
+              DTS:DTSID="{E367375F-3CBE-4E3B-A587-681BF38EE6D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Text"
+              DTS:DTSID="{97AD1C24-75D6-493C-A480-039DDC73B786}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TopleftColour"
+              DTS:DTSID="{B175D4D8-A26C-4835-B627-6B31852CA3A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BotrightColour"
+              DTS:DTSID="{D387C9C3-B29C-4467-951C-543FE08A94EE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{751F3345-3A67-4608-B554-E0EAF43704F9}"
@@ -318,7 +609,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB1ziNkrGw5SkFFaghegY86iSKYvT/0IIFihfq88cEHXQAAAAAOgAAAAAIAACAAAABAxDyFbTJqrqwsTNddozvQJkz+TR+EX5QQuLE6wML1FiAAAABood+KJrxcGPP8leOUQrwxiabmnnw1n6ACM7h37r/WnEAAAADvB9vDRBS4X2iUTmN27FhhNUcri1EH8wrl4acMiHQwngr2OCwaiak0io7NzoOdBO3SHNhghZd0psfddFLarRsn</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAfz1T3vNO/eobGkJnEJpz4Hdpjze5Y/A3s1+okHjz6LQAAAAAOgAAAAAIAACAAAACyi/IiWWTLPnKlMVI2HG9oqke7pOmR7uB67dJPLFl9PyAAAADYPLAtQLbCEJLiLsTWNt4moZvyUSzutr9ckjCgh7NRbkAAAABnZO6ONEUBhADlGp/bPSmCokjRAN12N1lPrT2Cw505y+bJ7k42fRx0oQGVjjSnh3b9mPKvEfkxivSP0SPGUvUc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -333,7 +624,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADwrCZK5ML2ZoFhNaCOmS5ZySjgVHrxvsNsK/6iCC3QqAAAAAAOgAAAAAIAACAAAADZdhr7vCjYRfyXPSKRp8jE5/RIWXVEGD42tcnkpNV1eiAAAAC9xRmaDZ5u6lKZSlu38zXo9JBbekGq3xGQPKR0Fa8mNkAAAACgiIVFYAa5Gbc6idYLlnDkR8Ox4PoYbuwQWRg25hs7epr8lxZJI8dlEV41AihASKz1TWRVME2plSTV9IZMJ5oB</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACOhOyuivy3kilCmnobprNwtVn/L1YfV3bcA5lsZ1bZ7wAAAAAOgAAAAAIAACAAAAD5qdTd7gVHYWiHMkgCKLnegNJYJNLyFnm7CWC3RS1svyAAAADhEPBmMYtHzZcAFHhAIE/Wtcd38IR5pkGBA0P1cNHoMUAAAAD049nv2+RU4s8hFfTeEQMXGfNNU+Qm1gx/sZwWEeTWUxJXSHo9yNDLU2jeXOoU2hmn2rOFt+VC7ka1tx7liPhs</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -348,7 +639,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABcXgw1X7xu1VNe3jMQ0iB6/UmLXdAVJ15C/5mDiaMySgAAAAAOgAAAAAIAACAAAAAMNmTtcxJXrgbNTWDJnQuyS4WcAdT+c3YYKCc/S91UmiAAAABmJtf7MRsqWaqvWDaXgD0Z1wm3fqx9/92bNZWXPPfx2UAAAACjTBAsqcDjFOIF19rdcXdaFqATsLA5CLhp+b8qzZIg4I4q/hiOlIMWE/IqThTsUXCvIw+Kby3kOvP2XrSQRZmu</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABVxcGAlJ3u7fi7Vtn9rROIyL/TDGeUQ4ulB4Ksu/paAAAAAAAOgAAAAAIAACAAAAD98DkndAntvHv+YRaWDyZcD5UiAAxn28K0DCEd0IDkoiAAAABFsjwHflbnkjTTaRxM4O2U/E++v1xL1V5zEHKXl69aZ0AAAAD5lTEowRhvHsOL+IFl6i2skU+CKWGeccvYVNu93Aabowj1v6i4Vu3vO0RCKX0258hh5AIQgagL4QTQhJVrLauQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -363,7 +654,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADGqp/B47lNECMGdeJb4JGVWwgzZCJzltjqYeldO5kLPAAAAAAOgAAAAAIAACAAAABlRitbLIe6h6H7ivLaf37oV6V23XsukXnoMXMOwYCUNyAAAADH73YoBWBuPRRVYXDOlec9JAefIENZLyXQUuakSec4HkAAAAD+eNOp/U2iW/vYA2668/qmKozHtUqZmowra1thq2fW1HggX8hVseGKpL3YQbx/0qYNy4G28ZUEoLsmyybnUdid</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACquuD5DsdKGG2zvggd9/9a4I2wVdTrCAzBHJtoXprfbgAAAAAOgAAAAAIAACAAAABj6U99hGFJOmjvSTpE7pKmsiNUH3VHZYNvcL6Mb9WQ4iAAAAAvbUKziKfhDwftlhQr90bu1Va1EfQ72bAZWfm/I6i2ikAAAABSvGQwt8duM9GugmTNbqID0xyHUdVpQ1OHIEmWqi6sgaFSX/TamlLjlzDkGQTCNWUzo+qGXm+EEt2L0owTOKh/</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -371,13 +662,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Data Flow Task - Insert data from csv to SQL serv table"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{AEA7C92E-A68A-4238-8F90-14C9E0477C58}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="Data Flow Task - Insert data from csv to SQL serv table"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -385,7 +676,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Flat File Source"
+              refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
@@ -405,24 +696,24 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
                       name="Name"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -437,13 +728,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Landmass]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Landmass]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Landmass]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Landmass]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Landmass]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Landmass]"
                       name="Landmass"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -458,13 +749,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Zone]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Zone]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Zone]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Zone]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Zone]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Zone]"
                       name="Zone"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -479,13 +770,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Area]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Area]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Area]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Area]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Area]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Area]"
                       name="Area"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -500,13 +791,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Population]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Population]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Population]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Population]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Population]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Population]"
                       name="Population"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -521,13 +812,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Language]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Language]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Language]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Language]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Language]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Language]"
                       name="Language"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -542,13 +833,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Religion]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Religion]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Religion]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Religion]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Religion]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Religion]"
                       name="Religion"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -563,13 +854,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Bars]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Bars]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Bars]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Bars]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Bars]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Bars]"
                       name="Bars"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -584,13 +875,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Stripes]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Stripes]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Stripes]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Stripes]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Stripes]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Stripes]"
                       name="Stripes"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -605,13 +896,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Colours]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Colours]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Colours]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Colours]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Colours]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Colours]"
                       name="Colours"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -626,13 +917,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Red]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Red]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Red]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Red]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Red]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Red]"
                       name="Red"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -647,13 +938,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Green]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Green]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Green]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Green]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Green]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Green]"
                       name="Green"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -668,13 +959,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Blue]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Blue]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Blue]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Blue]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Blue]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Blue]"
                       name="Blue"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -689,13 +980,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Gold]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Gold]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gold]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gold]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Gold]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Gold]"
                       name="Gold"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -710,13 +1001,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[White]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[White]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[White]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[White]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[White]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[White]"
                       name="White"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -731,13 +1022,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Black]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Black]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Black]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Black]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Black]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Black]"
                       name="Black"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -752,13 +1043,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Orange]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Orange]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Orange]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Orange]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Orange]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Orange]"
                       name="Orange"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -773,13 +1064,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Mainhue]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Mainhue]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Mainhue]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Mainhue]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Mainhue]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Mainhue]"
                       name="Mainhue"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -794,13 +1085,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Circles]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Circles]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Circles]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Circles]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Circles]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Circles]"
                       name="Circles"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -815,13 +1106,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Crosses]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Crosses]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Crosses]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Crosses]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Crosses]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Crosses]"
                       name="Crosses"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -836,13 +1127,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Saltires]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Saltires]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Saltires]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Saltires]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Saltires]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Saltires]"
                       name="Saltires"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -857,13 +1148,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Quarters]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Quarters]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Quarters]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Quarters]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Quarters]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Quarters]"
                       name="Quarters"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -878,13 +1169,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Sunstars]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Sunstars]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sunstars]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sunstars]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Sunstars]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Sunstars]"
                       name="Sunstars"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -899,13 +1190,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Crescent]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Crescent]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Crescent]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Crescent]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Crescent]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Crescent]"
                       name="Crescent"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -920,13 +1211,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Triangle]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Triangle]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Triangle]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Triangle]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Triangle]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Triangle]"
                       name="Triangle"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -941,13 +1232,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Icon]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Icon]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Icon]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Icon]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Icon]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Icon]"
                       name="Icon"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -962,13 +1253,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Animate]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Animate]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Animate]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Animate]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Animate]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Animate]"
                       name="Animate"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -983,13 +1274,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Text]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Text]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Text]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Text]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Text]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Text]"
                       name="Text"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1004,13 +1295,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TopleftColour]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[TopleftColour]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TopleftColour]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TopleftColour]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TopleftColour]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[TopleftColour]"
                       name="TopleftColour"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1025,13 +1316,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[BotrightColour]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[BotrightColour]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BotrightColour]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BotrightColour]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[BotrightColour]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[BotrightColour]"
                       name="BotrightColour"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1049,178 +1340,178 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
                       dataType="wstr"
                       length="50"
                       name="Name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Landmass]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Landmass]"
                       dataType="wstr"
                       length="50"
                       name="Landmass" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Zone]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Zone]"
                       dataType="wstr"
                       length="50"
                       name="Zone" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Area]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Area]"
                       dataType="wstr"
                       length="50"
                       name="Area" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Population]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Population]"
                       dataType="wstr"
                       length="50"
                       name="Population" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Language]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Language]"
                       dataType="wstr"
                       length="50"
                       name="Language" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Religion]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Religion]"
                       dataType="wstr"
                       length="50"
                       name="Religion" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Bars]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Bars]"
                       dataType="wstr"
                       length="50"
                       name="Bars" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Stripes]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Stripes]"
                       dataType="wstr"
                       length="50"
                       name="Stripes" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Colours]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Colours]"
                       dataType="wstr"
                       length="50"
                       name="Colours" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Red]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Red]"
                       dataType="wstr"
                       length="50"
                       name="Red" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Green]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Green]"
                       dataType="wstr"
                       length="50"
                       name="Green" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Blue]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Blue]"
                       dataType="wstr"
                       length="50"
                       name="Blue" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gold]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gold]"
                       dataType="wstr"
                       length="50"
                       name="Gold" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[White]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[White]"
                       dataType="wstr"
                       length="50"
                       name="White" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Black]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Black]"
                       dataType="wstr"
                       length="50"
                       name="Black" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Orange]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Orange]"
                       dataType="wstr"
                       length="50"
                       name="Orange" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Mainhue]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Mainhue]"
                       dataType="wstr"
                       length="50"
                       name="Mainhue" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Circles]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Circles]"
                       dataType="wstr"
                       length="50"
                       name="Circles" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Crosses]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Crosses]"
                       dataType="wstr"
                       length="50"
                       name="Crosses" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Saltires]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Saltires]"
                       dataType="wstr"
                       length="50"
                       name="Saltires" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Quarters]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Quarters]"
                       dataType="wstr"
                       length="50"
                       name="Quarters" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sunstars]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sunstars]"
                       dataType="wstr"
                       length="50"
                       name="Sunstars" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Crescent]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Crescent]"
                       dataType="wstr"
                       length="50"
                       name="Crescent" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Triangle]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Triangle]"
                       dataType="wstr"
                       length="50"
                       name="Triangle" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Icon]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Icon]"
                       dataType="wstr"
                       length="50"
                       name="Icon" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Animate]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Animate]"
                       dataType="wstr"
                       length="50"
                       name="Animate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Text]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Text]"
                       dataType="wstr"
                       length="50"
                       name="Text" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TopleftColour]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TopleftColour]"
                       dataType="wstr"
                       length="50"
                       name="TopleftColour" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BotrightColour]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BotrightColour]"
                       dataType="wstr"
                       length="50"
                       name="BotrightColour" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       dataType="nText"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1229,7 +1520,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Destination"
+              refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
@@ -1286,7 +1577,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 3]"
                   connectionManagerRefId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 3]"
                   description="The OLE DB runtime connection used to access the database."
@@ -1294,372 +1585,372 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Name]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Name]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Name"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Name]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Name]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Landmass]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Landmass]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Landmass"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Landmass]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Landmass]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Landmass]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Landmass]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Zone]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Zone]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Zone"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Zone]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Zone]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Zone]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Zone]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Area]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Area]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Area"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Area]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Area]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Area]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Area]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Population]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Population]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Population"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Population]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Population]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Population]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Population]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Language]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Language]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Language"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Language]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Language]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Language]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Language]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Religion]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Religion]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Religion"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Religion]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Religion]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Religion]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Religion]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Bars]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Bars]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Bars"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Bars]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Bars]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Bars]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Bars]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Stripes]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Stripes]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Stripes"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Stripes]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Stripes]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Stripes]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Stripes]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Colours]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Colours]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Colours"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Colours]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Colours]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Colours]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Colours]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Red]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Red]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Red"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Red]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Red]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Red]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Red]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Green]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Green]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Green"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Green]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Green]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Green]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Green]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Blue]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Blue]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Blue"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Blue]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Blue]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Blue]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Blue]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Gold]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Gold]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Gold"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gold]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Gold]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gold]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Gold]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[White]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[White]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="White"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[White]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[White]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[White]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[White]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Black]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Black]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Black"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Black]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Black]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Black]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Black]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Orange]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Orange]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Orange"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Orange]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Orange]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Orange]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Orange]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mainhue]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mainhue]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Mainhue"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mainhue]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Mainhue]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mainhue]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Mainhue]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Circles]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Circles]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Circles"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Circles]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Circles]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Circles]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Circles]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Crosses]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Crosses]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Crosses"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Crosses]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Crosses]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Crosses]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Crosses]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Saltires]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Saltires]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Saltires"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Saltires]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Saltires]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Saltires]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Saltires]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Quarters]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Quarters]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Quarters"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quarters]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Quarters]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quarters]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Quarters]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Sunstars]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Sunstars]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Sunstars"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sunstars]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Sunstars]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sunstars]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Sunstars]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Crescent]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Crescent]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Crescent"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Crescent]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Crescent]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Crescent]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Crescent]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Triangle]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Triangle]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Triangle"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Triangle]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Triangle]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Triangle]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Triangle]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Icon]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Icon]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Icon"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Icon]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Icon]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Icon]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Icon]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Animate]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Animate]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Animate"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Animate]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Animate]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Animate]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Animate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Text]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Text]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Text"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Text]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Text]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Text]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[Text]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TopleftColour]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TopleftColour]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="TopleftColour"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TopleftColour]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TopleftColour]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TopleftColour]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[TopleftColour]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BotrightColour]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BotrightColour]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="BotrightColour"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BotrightColour]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[BotrightColour]" />
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BotrightColour]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output].Columns[BotrightColour]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
                       dataType="wstr"
                       length="50"
                       name="Name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Landmass]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Landmass]"
                       dataType="wstr"
                       length="50"
                       name="Landmass" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Zone]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Zone]"
                       dataType="wstr"
                       length="50"
                       name="Zone" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Area]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Area]"
                       dataType="wstr"
                       length="50"
                       name="Area" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Population]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Population]"
                       dataType="wstr"
                       length="50"
                       name="Population" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Language]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Language]"
                       dataType="wstr"
                       length="50"
                       name="Language" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Religion]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Religion]"
                       dataType="wstr"
                       length="50"
                       name="Religion" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Bars]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Bars]"
                       dataType="wstr"
                       length="50"
                       name="Bars" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Stripes]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Stripes]"
                       dataType="wstr"
                       length="50"
                       name="Stripes" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Colours]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Colours]"
                       dataType="wstr"
                       length="50"
                       name="Colours" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Red]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Red]"
                       dataType="wstr"
                       length="50"
                       name="Red" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Green]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Green]"
                       dataType="wstr"
                       length="50"
                       name="Green" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Blue]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Blue]"
                       dataType="wstr"
                       length="50"
                       name="Blue" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gold]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gold]"
                       dataType="wstr"
                       length="50"
                       name="Gold" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[White]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[White]"
                       dataType="wstr"
                       length="50"
                       name="White" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Black]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Black]"
                       dataType="wstr"
                       length="50"
                       name="Black" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Orange]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Orange]"
                       dataType="wstr"
                       length="50"
                       name="Orange" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mainhue]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mainhue]"
                       dataType="wstr"
                       length="50"
                       name="Mainhue" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Circles]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Circles]"
                       dataType="wstr"
                       length="50"
                       name="Circles" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Crosses]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Crosses]"
                       dataType="wstr"
                       length="50"
                       name="Crosses" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Saltires]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Saltires]"
                       dataType="wstr"
                       length="50"
                       name="Saltires" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quarters]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quarters]"
                       dataType="wstr"
                       length="50"
                       name="Quarters" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sunstars]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sunstars]"
                       dataType="wstr"
                       length="50"
                       name="Sunstars" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Crescent]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Crescent]"
                       dataType="wstr"
                       length="50"
                       name="Crescent" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Triangle]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Triangle]"
                       dataType="wstr"
                       length="50"
                       name="Triangle" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Icon]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Icon]"
                       dataType="wstr"
                       length="50"
                       name="Icon" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Animate]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Animate]"
                       dataType="wstr"
                       length="50"
                       name="Animate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Text]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Text]"
                       dataType="wstr"
                       length="50"
                       name="Text" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TopleftColour]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TopleftColour]"
                       dataType="wstr"
                       length="50"
                       name="TopleftColour" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BotrightColour]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BotrightColour]"
                       dataType="wstr"
                       length="50"
                       name="BotrightColour" />
@@ -1668,22 +1959,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1694,22 +1985,40 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              refId="Package\Data Flow Task - Insert data from csv to SQL serv table.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Execute SQL Task"
+      DTS:refId="Package\Execute Powershell Script for data normalisation and conversion to csv with headers from seperate file"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{B7AB9485-6870-4A16-B869-820667E84DEF}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Powershell Script for data normalisation and conversion to csv with headers from seperate file"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+          Arguments="-NoProfile -ExecutionPolicy ByPass -File C:\Users\jaqbs\source\repos\SSIS_Projects\Integration Services ETL\DATA_SETS\Convert-Data-To-Csv.ps1"
+          TimeOut="999"
+          FailTaskIfReturnCodeIsNotSuccessValue="False" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task - Create Table as per headers"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{41A4F833-A3E8-44D0-9FA7-A669377D70B6}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Execute SQL Task"
+      DTS:ObjectName="Execute SQL Task - Create Table as per headers"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -1724,10 +2033,18 @@
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{142F5B43-BA39-421F-A649-8F2A362C60CA}"
-      DTS:From="Package\Execute SQL Task"
+      DTS:From="Package\Execute SQL Task - Create Table as per headers"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\Data Flow Task" />
+      DTS:To="Package\Data Flow Task - Insert data from csv to SQL serv table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{B0AD79A0-EC8D-45D1-94CD-226504C28026}"
+      DTS:From="Package\Execute Powershell Script for data normalisation and conversion to csv with headers from seperate file"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Execute SQL Task - Create Table as per headers" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1740,24 +2057,24 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Data Flow Task"
+          Size="341,42"
+          Id="Package\Data Flow Task - Insert data from csv to SQL serv table"
           TopLeft="176.5,303.5" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Execute SQL Task"
+          Size="307,42"
+          Id="Package\Execute SQL Task - Create Table as per headers"
           TopLeft="157,176" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="238.5,218">
+          TopLeft="310.5,218">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="13.5,85.5"
+              EndConnector="36.5,85.5"
               Start="0,0"
-              End="13.5,78">
+              End="36.5,78">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -1768,13 +2085,51 @@
                     Point2="0,42.75"
                     Point3="4,42.75" />
                   <mssgle:LineSegment
-                    End="9.5,42.75" />
+                    End="32.5,42.75" />
                   <mssgle:CubicBezierSegment
-                    Point1="9.5,42.75"
-                    Point2="13.5,42.75"
-                    Point3="13.5,46.75" />
+                    Point1="32.5,42.75"
+                    Point2="36.5,42.75"
+                    Point3="36.5,46.75" />
                   <mssgle:LineSegment
-                    End="13.5,78" />
+                    End="36.5,78" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="562,42"
+          Id="Package\Execute Powershell Script for data normalisation and conversion to csv with headers from seperate file"
+          TopLeft="185,62" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="466,104">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-155.5,72"
+              Start="0,0"
+              End="-155.5,64.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32"
+                    Point2="0,36"
+                    Point3="-4,36" />
+                  <mssgle:LineSegment
+                    End="-151.5,36" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-151.5,36"
+                    Point2="-155.5,36"
+                    Point3="-155.5,40" />
+                  <mssgle:LineSegment
+                    End="-155.5,64.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1787,20 +2142,20 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Data Flow Task - Insert data from csv to SQL serv table">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="168,84" />
-        <NodeLayout
           Size="171,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
+          Id="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination"
           TopLeft="188.5,165.5" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source"
+          TopLeft="168,84" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          Id="Package\Data Flow Task - Insert data from csv to SQL serv table.Paths[Flat File Source Output]"
           TopLeft="243.5,126">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1837,7 +2192,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
