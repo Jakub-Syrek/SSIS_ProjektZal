@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="61"
-  DTS:VersionGUID="{66A0D2AF-38EF-4DA6-B23E-3EE6E7C00C4B}">
+  DTS:VersionBuild="74"
+  DTS:VersionGUID="{DF0F9B05-29E6-49F8-8A55-FC2CBCF9A49E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -675,7 +675,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB4AOs+4Ub/5oC9NNfcESgDUzEL+FiIUlhPHYFnNGd2qAAAAAAOgAAAAAIAACAAAADQ4SyobecUSdmClUxpbVBOSu7SHhuumOCqTvysuhQMzSAAAACRrnP19ft/jM6mSR6AJCjy4iBDqDK3C8+gRz1PNdnPi0AAAAD3NOpLJl+fL5vqBHtvRr4ZuAJqzGPS9qcp/T+RZkpKFgaWhWRcEV/7vlEAtkq2mq9uCODxAwjppH5mVPLjoh1x</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABBjmOMR0gCwCvW8YP7vz9dx4/EV5XN7qdOPefxpA8HXQAAAAAOgAAAAAIAACAAAABIQkZQ7Ov0wp3Il1aQoylTdW1fCGpCe5B7ekYkTr2v8SAAAABhKVMhCqYKtvMkWIApkMfM6qReHG18gFm9eQ0iOU4u00AAAADdPs4UeKkJokV0ubsm7A5vip9ScJ12b1iOHbsMip+gRfu7gYdyqMFCzoER5hGj8XLUDUP1ewp7A8KGa9eWjJNm</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -690,7 +690,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABoyN6l3AQgCraZb1UlElyDTEYGJLK7z2g29yO7stwV7gAAAAAOgAAAAAIAACAAAACVxieVfAUT3ulXEi+tkhLs04hku4pvJtVG9se3nF9TwyAAAADmMuZaYKjvUSRi/LfCD1N4n/Q7hkudnnnRsej1JnFXwUAAAAAuSyAOQBv33GuNxzWPpmwAUlmyjQckhsCwHsKCgjB/BWDw/U6yyJ77awm7YEvdzTvQjK8kocz07M8wxytCQiCp</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAfJpQSR3wL7iA5EUWIiY7AYGx+vpuJKaqfhvNAIsL3wQAAAAAOgAAAAAIAACAAAABLygsIyIUSbS0knGce8r7Xj9XjFb1+KVynfk0DUVfzSyAAAADa2GIHWp6cnuvPON31fqCnuq7w8S1s5XATsBW4QatUEkAAAABNeqhhGMgoWLqYHaDpM8a64z+MwmBf0tGrBn4VVYQGmEUNoXlsjM4fp3cFHfspOxzPOP5laLcbdF0140hcZUBJ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -705,7 +705,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABwKpSSjUJdPknOL+PXm60ZrQNv5b6b8EgWcx1ONJDRcgAAAAAOgAAAAAIAACAAAABiBlKyHuRCf0E61NnZV1Y5mSLqbD9ApL0UXawQnP5fmCAAAAChL9xLY4gudQoYqKkDaV/dpFpI5Q6JpvQ3y6QQch/YC0AAAACSrOOYwPYF1L2jrmndPxSmJhQ484rX1CdOliPYwuPi8Uh1Yf0SpDQU+UTra5105TBAimlk0N0ZczZOm6M3JZjr</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADJVfBgBmRhRGebzaNhjA0dHViL02/njEo1ramwClvaXwAAAAAOgAAAAAIAACAAAACo5UfxWYTBKhL1UspZ199frVp+LbixJngqqnPrvCjomiAAAABuLI8u2ywdKvTZ5YYQBJNn8DYa6aJh6WfhxObqhgtx1EAAAACHJcCbaMMy3PHfOD1bYBfKt7UedIoLKKcoqmtSVo3i3ci8ov9D0E564NXL0iXzNGYVlUqimQEbQ7dOZh0OVAC6</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -720,7 +720,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABChQnEe0L2kaSoDcVJuvVYcGHBHZ8x2z4CJMUXvFvDAwAAAAAOgAAAAAIAACAAAAAFVw9+u2DFDYFXSTMlfxy8lp8tr4Dz6Zt6QG2vvH4JGiAAAADN0TAqg0Far/v1pqctvK+fFvWkytJOfgNv1GPDu5hB2UAAAAD2MWGPTdcU9EAQvIuAM8R7kIRhokCFH7qFVsZhxKxRkext4k0AtjGe4In8pSeRzHl8NNEBzrdjTwyYk7hLtHSI</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABMmMHmucSLB0pWRHvUjzHvH7IRORCBeZKlTpP2/sR1ggAAAAAOgAAAAAIAACAAAACj0kBZMOvLUj+WAz/U9+g6sxNlV7Q1PFKdErAddpKPzyAAAADrgyj7F3oqRhaZVq57FvldMBJ8Ot9h+1tmJTH7Pwlyv0AAAADg6mTt1M/SnYJDRkzdFl+SEZNyflA9X3GkW4hHMJDJtEnApP/oZYjaWVUlpYR39G10Fv2rxwthpAxTdOvMMxEg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -735,7 +735,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADgZOK4f8j3OLHU7/g+QRmpfK0cabQ/FKn/7kYdjrQ2DwAAAAAOgAAAAAIAACAAAABIre6JrI2kjQSU8rV9oS41TZ1egojE0Niw4z8EtGjH2CAAAADFzxVQefFFD0kdu8z3hQLNfuBaALNxp80gDsu5i8qrmkAAAACBTfvzEgsChqHXA2GNKkUzdblHgDwL8Lc1YvtbKjB5AGG5jBB3Dm3ztDBRH0UliAVTCXXDSKEkwffUMcrpxivc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABWv8KfgtBzYYP4fkLTB9DyN3apPds1MbpSSQMCaRi8FwAAAAAOgAAAAAIAACAAAAC7stihPCMoDlIphVrdQfN3Q0lY8Xb0lZJGpwvAFj7fsiAAAADSGoJnWAkCbodIBXRcDrmSqHcc/vjnhqgLOnWvwc8lfkAAAAB5rAplaF7ZAqAQtgaYVfvCcm2ttORWbRwp3Uxn7RZv1H2cFooG66xFetVKb5B8BNzwTVCo3aTifzY7ls+GPSnJ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -750,7 +750,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAJzn8RC1Z4PjhfPe2fs9XpVFZ/pkDKEL0Smxwotw2IZQAAAAAOgAAAAAIAACAAAACeVpHw79BVgeRfflI8LhoKt8jkgCcqTM11CfrglmruDiAAAABQAQLYrXQLuZZdQjaPlRYUCaTbdfuMPadP4LUEj584+UAAAAAf3SiMKWkUmIMJ+fFEjC5z3OCShrrPLXgbP5hqlM9j7C+UttAOIoAG183B12TNd0xvyeXAouH2EoyhN33vJCna</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAqCF1hnXaAAfuX+QORKTR5y+kUTr7mggRODtdoteIiNQAAAAAOgAAAAAIAACAAAACtX8ngwSB4Wg6QGXEDzBfap4Ih90h1s+F48JdboS+e+iAAAADJYQ395pB7zfmVUPoEccKll1ZJhOPBfb6R1dDPWaYSqUAAAAATs5N5rhKjADCBQ/3IMJco2AU7N4i1thAZrlWzPW5it164IA9VM7GFMZYXv2bfOS3YcCofGWGWXQu+YHiR5Fmk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -765,7 +765,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABg4uG+OV8ZXnNz1UjuWV8uVze9Db9mlZXe3HB+9vMXlQAAAAAOgAAAAAIAACAAAAAq/RZMGxoxqJSAbCBjg9zQfteEqiOIrk4NEXtSifwQDSAAAAD0T44/ruu+k3DdC0YuxC3TrQdLiT0nAxyEKlpZDe+6DUAAAAC7U5iK6ydbq54uY0MvclcMH+vkewArGDNUtNSu8MkfJXD28OGtQYqbYJcg/lNxvFBk6gMmoMcrDIYI+t69igZc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC5Ev4tWU5XHiZ+rM2R8La7pim95LXG7WQ5SNvGnauWgQAAAAAOgAAAAAIAACAAAABUULy9J3u5dK1K8tiYD1m9TsVVbIo1tTYHsfPgokadriAAAADtyiVd/mUzfQCXa72LFK0DizLPYQUCWc6PRZ9tNHfGjkAAAAA71SnGJp204/SI4BZMkJYpPJdoDSq2jbAdMdUgjxTkJk6DSnORADXepmYK4rnyZDm3Av4R+tBBiODyLb71vYgN</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -780,7 +780,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAChZjNU5PeKcPl4EvjsFukJmpZ6/Y6Ji3Iu5ssi97KYqAAAAAAOgAAAAAIAACAAAAAgB0+rXc9DykXNlVNjcTUXB1cp9MLIzkQhPgx+56LfzyAAAAAKA9X5fghRQFb6TMR4faOVOQXoj4C9IwULpvj6KndgBUAAAABuhfkDSMtmC3lTEM58HtJpQJUQKXJuV2lsHlXpJUgF3qpIAIyjMBLpOiS89doLygocxfHzhiS6P6UQH2ITUAi0</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABxSsFZCoK1zHZ1KMZuf8BbTgmI29xmLAu5PloJ31grgAAAAAAOgAAAAAIAACAAAACEHtSsxr47R7y5bfBnhC3GWZze2qR/lvUxmvCQeJPaQCAAAADAkZ23rW2i+FasoVn36K8c6eKHzR29zqNdvMObRjMtOEAAAACFc9MuC8YdsCyF8R77XYGTQe1BeZdtmCxTaoC/ZPLXO7NBikJj+Wtjrbu7vCitqh9saHP/vbCBamQFTlEr6vZ+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -795,7 +795,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACcldgFr4iKr6IgPFGFczHqpEW5NT5KhuNbqa9n+tyfQgAAAAAOgAAAAAIAACAAAAAwH0KcWknJb8GHoTLz/5RUrpeaq2EJTosOH6GJ0WKBJiAAAAAlLbVuVW4DL6ULUWkk8qBWvPpoWHZfD0Ta6BQniKRUpkAAAABXmRYghNRjv280aukwjelxIpSdl3mdvIQUTpNMlY6kQ9GVRRAzcOs+GHzSrUvjyssOvvmdBtBZYEMNLIJ0mw6g</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAhS8R2OWsuhXb/dJZEgkwfSi3D25eUV1MsKqD93O214wAAAAAOgAAAAAIAACAAAADAQm2joYAN03HvxusLryqhLX6YZjERhskXQk37Kzew0iAAAABnHdep3Mf4GSt9dzTFjNsZrIgBr+tdyCLYDby1Gs7qg0AAAABKyvAHvJPyWseQJ8LuTw2WVpbDCdeX2uq0k6EH5P5OULQBz2f9VpymE00Id6x99rZfA1dBf6havLtOfNJLABoF</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -810,7 +810,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACgNjfauNcLR39TacDIgmeG4dy+CE8hC2IdPv/ieMNAEgAAAAAOgAAAAAIAACAAAAD51NRm+3nMQZVepKaXkC7TYBw6+zlSdO+ZX+rJSWUXpCAAAAA4wElaVaYny+wnupG24umiX7o6C+/Yj9/lGjUZCQS/w0AAAABVMB7sJjfUetJ826DKqUkFjZF1EKrLORZhNAjymZ4/6Pe8FP5xSqmInpleJSfrgEvRuV2uKVmDLAf33KhHsRtM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD5KrEr4TOyajdWdajgK0T1JqZcm82+3iny2JNBgbHmRAAAAAAOgAAAAAIAACAAAAC5kzijc9mjoHJ7vLk0jYzBE9Sowd3CKcsKcEA+gIhn2iAAAABgyEmvYDBDJhjoOcLLZrIYJyS7E99GEie1jsVTcg69CEAAAAAu01pHhKcRGbg5fUFWXtxTBMogHZd8Qqwfh4/B28EN6yDJSchvB+efUqNv/PSTyXzIsMyoVQXhBVSRDkr7TFzL</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -825,7 +825,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADdjbKETndxeA5jUxdmFCU722GlYfQM/tHr3Phos9pPPAAAAAAOgAAAAAIAACAAAADahgNX9B8i7Fk5BhlkLu6jdLfA3X/RbRSTK8GAgY7UvSAAAADdISsqLeNnyaGYlcOuz13nZxKjTE26jTH/505LkrYALEAAAAAakcfyzSPTaW53DQ0bc6F2UEa4vIZLIMggMC3yTbODTG7FPQZ+utS1K6QWk6EPaIxuBbf60B680i+hsLsqcCSi</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAByNfcGc4zCev39nEaKwsUjbSZDCJl8j9717bItPUwmLAAAAAAOgAAAAAIAACAAAAAM0wmFhJELKqEPVktRXlP7rsuJ8DSXK9OXxvXFExzGhyAAAAC47gGxXi7SoN7BqEMUJW3b2TnNgPBOfY28SUlr7hjIlEAAAAB0CcFx3cIfbPilJstZC96wD0whxdL+m6WZjuy1GRkDA878pP4Y9Rs4gQpniyUJTxB7/LAmdAIF3/U0mN+z/SME</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -840,7 +840,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABsFjraWc/1L8xmyth63fijOq+CdiRiwKkxIVlTKRTQLwAAAAAOgAAAAAIAACAAAAC7MsY8EG5bBvR8c1RBH0TSi8ABMZNTr5cMuV4J1KhUPiAAAADsSgc4FG1i61e1JGARl1COAyu1xi3zSnkenm6tEi/mdUAAAAAcK2HMmhfBDyd87JCFZNj6o8OsJyF5m8kn8mus5Zw87QcBM8vAW/tXHJERcoMEWFw0eRq+s8wQDrXNNYEaLhWl</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC5ez/mFgHC4yDtte+HDtF/wJaFAxJXRLFSgjVVd6YBiwAAAAAOgAAAAAIAACAAAACG4n4kW/shXnDJiMr6kMmCBVNtelSqsbi2UIHY2KpeviAAAACthNrv14/yS29CwLXlLxKnVl9Y9rKawFABG0tbY94+PUAAAAAqeBKiwkEy+fQ3ytVisuOuV0fdet3XRADt1FdjMfCEB0NfCizLoz8LXOcbhA9xROts1rR2MRkj/RtAOkH7dIIV</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -855,7 +855,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADpua+1HLen6jXgqBklKh6wHHi+odxzLI6OxyEIbKFj2QAAAAAOgAAAAAIAACAAAAA/NLn4We3SRpOVsw9yjXeRDy3QtwydKy6Rrq5xe8O7sCAAAAChyTesjg9YMapuh8/gaqmpnHq2O93ZGtyS0AW1JkQMfEAAAACksSQrXvDHiEbS8nCekOLgoa2YLfB/1Idpyo++2hi7izuA6sETkNDGKTgai40DFBg62E0rp/UzR4q//s/IdBBi</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC8a6icIwJdh3PZvKIAm7gVEDriaPic5YLiNp1KYL2CTAAAAAAOgAAAAAIAACAAAAAOwxenoaNSQ2qHAqwOMu18yv/HlBItJyp2z03xuHKplSAAAABNgVXMtWphHDo3TCaMgRXEAON3QJ4pQ96IhUU6ugu7gEAAAABMgsxxNX8wB2ejXp0o8ycP2ZGwRKrNy4b3SFP1+uMxje70Wz4il3B7DvkQeDYjROGCx3BcaWVaeg2nqVvbarHv</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1736,7 +1736,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[FlagsData]</property>
+                  name="OpenRowset">[dbo].[FlagsData]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1770,7 +1770,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">CHECK_CONSTRAINTS</property>
+                  name="FastLoadOptions"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -2325,12 +2325,11 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[Class]"
-                      codePage="1250"
-                      dataType="str"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Class]"
-                      length="250"
+                      length="50"
                       lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[Class]"
                       name="Class"
                       truncationRowDisposition="FailComponent">
@@ -2404,11 +2403,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination"
+              refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination"
+              name="OLE DB Destination 1"
               usesDispositions="true"
               version="4">
               <properties>
@@ -2419,7 +2418,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[IrisData]</property>
+                  name="OpenRowset">[dbo].[IrisData]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2445,7 +2444,7 @@
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
+                  name="FastLoadKeepIdentity">true</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
@@ -2453,7 +2452,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">CHECK_CONSTRAINTS</property>
+                  name="FastLoadOptions"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -2461,110 +2460,104 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 9]"
-                  connectionManagerRefId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 9]"
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 3]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
-                  errorRowDisposition="IgnoreFailure"
+                  errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SepalLength]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[SepalLength]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="SepalLength"
-                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SepalLength]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SepalLength]"
                       lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[SepalLength]" />
                     <inputColumn
-                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SepalWidth]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[SepalWidth]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="SepalWidth"
-                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SepalWidth]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SepalWidth]"
                       lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[SepalWidth]" />
                     <inputColumn
-                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PetalLength]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PetalLength]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="PetalLength"
-                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PetalLength]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PetalLength]"
                       lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[PetalLength]" />
                     <inputColumn
-                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PetalWidth]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PetalWidth]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="PetalWidth"
-                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PetalWidth]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PetalWidth]"
                       lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[PetalWidth]" />
                     <inputColumn
-                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Class]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="250"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Class]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="Class"
-                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Class]"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Class]"
                       lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[Class]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SepalLength]"
-                      dataType="numeric"
-                      name="SepalLength"
-                      precision="3"
-                      scale="1" />
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SepalLength]"
+                      dataType="wstr"
+                      length="50"
+                      name="SepalLength" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SepalWidth]"
-                      dataType="numeric"
-                      name="SepalWidth"
-                      precision="4"
-                      scale="1" />
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SepalWidth]"
+                      dataType="wstr"
+                      length="50"
+                      name="SepalWidth" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PetalLength]"
-                      dataType="numeric"
-                      name="PetalLength"
-                      precision="4"
-                      scale="1" />
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PetalLength]"
+                      dataType="wstr"
+                      length="50"
+                      name="PetalLength" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PetalWidth]"
-                      dataType="numeric"
-                      name="PetalWidth"
-                      precision="4"
-                      scale="1" />
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PetalWidth]"
+                      dataType="wstr"
+                      length="50"
+                      name="PetalWidth" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Class]"
-                      codePage="1250"
-                      dataType="str"
-                      length="250"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Class]"
+                      dataType="wstr"
+                      length="50"
                       name="Class" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2576,7 +2569,7 @@
           <paths>
             <path
               refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
@@ -2632,7 +2625,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{751F3345-3A67-4608-B554-E0EAF43704F9}"
-          SQLTask:SqlStatementSource="DROP TABLE IF EXISTS dbo.Flags&#xA;CREATE TABLE Flags(&#xA;   Name           VARCHAR(24) NOT NULL PRIMARY KEY&#xA;  ,Landmass       INTEGER  NOT NULL&#xA;  ,Zone           INTEGER  NOT NULL&#xA;  ,Area           INTEGER  NOT NULL&#xA;  ,Population     INTEGER  NOT NULL&#xA;  ,Language       INTEGER  NOT NULL&#xA;  ,Religion       INTEGER  NOT NULL&#xA;  ,Bars           INTEGER  NOT NULL&#xA;  ,Stripes        INTEGER  NOT NULL&#xA;  ,Colours        INTEGER  NOT NULL&#xA;  ,Red            BIT  NOT NULL&#xA;  ,Green          BIT  NOT NULL&#xA;  ,Blue           BIT  NOT NULL&#xA;  ,Gold           BIT  NOT NULL&#xA;  ,White          BIT  NOT NULL&#xA;  ,Black          BIT  NOT NULL&#xA;  ,Orange         BIT  NOT NULL&#xA;  ,Mainhue        VARCHAR(7) NOT NULL&#xA;  ,Circles        INTEGER  NOT NULL&#xA;  ,Crosses        INTEGER  NOT NULL&#xA;  ,Saltires       BIT  NOT NULL&#xA;  ,Quarters       INTEGER  NOT NULL&#xA;  ,Sunstars       INTEGER  NOT NULL&#xA;  ,Crescent       BIT  NOT NULL&#xA;  ,Triangle       BIT  NOT NULL&#xA;  ,Icon           BIT  NOT NULL&#xA;  ,Animate        BIT  NOT NULL&#xA;  ,Text           BIT  NOT NULL&#xA;  ,TopleftColour  VARCHAR(7) NOT NULL&#xA;  ,BotrightColour VARCHAR(7) NOT NULL&#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="DROP TABLE IF EXISTS dbo.[FlagsData]&#xA;CREATE TABLE [FlagsData] (&#xA;    [Name] nvarchar(50),&#xA;    [Landmass] nvarchar(50),&#xA;    [Zone] nvarchar(50),&#xA;    [Area] nvarchar(50),&#xA;    [Population] nvarchar(50),&#xA;    [Language] nvarchar(50),&#xA;    [Religion] nvarchar(50),&#xA;    [Bars] nvarchar(50),&#xA;    [Stripes] nvarchar(50),&#xA;    [Colours] nvarchar(50),&#xA;    [Red] nvarchar(50),&#xA;    [Green] nvarchar(50),&#xA;    [Blue] nvarchar(50),&#xA;    [Gold] nvarchar(50),&#xA;    [White] nvarchar(50),&#xA;    [Black] nvarchar(50),&#xA;    [Orange] nvarchar(50),&#xA;    [Mainhue] nvarchar(50),&#xA;    [Circles] nvarchar(50),&#xA;    [Crosses] nvarchar(50),&#xA;    [Saltires] nvarchar(50),&#xA;    [Quarters] nvarchar(50),&#xA;    [Sunstars] nvarchar(50),&#xA;    [Crescent] nvarchar(50),&#xA;    [Triangle] nvarchar(50),&#xA;    [Icon] nvarchar(50),&#xA;    [Animate] nvarchar(50),&#xA;    [Text] nvarchar(50),&#xA;    [TopleftColour] nvarchar(50),&#xA;    [BotrightColour] nvarchar(50)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -2648,7 +2641,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{751F3345-3A67-4608-B554-E0EAF43704F9}"
-          SQLTask:SqlStatementSource="Drop table dbo.[IrisData]&#xA;CREATE TABLE [IrisData](&#xA;   SepalLength NUMERIC(3,1) NOT NULL&#xA;  ,SepalWidth  NUMERIC(4,1) NOT NULL&#xA;  ,PetalLength NUMERIC(4,1) NOT NULL&#xA;  ,PetalWidth  NUMERIC(4,1) NOT NULL&#xA;  ,Class       VARCHAR(16) NOT NULL PRIMARY KEY&#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="Drop table dbo.[IrisData]&#xA;CREATE TABLE [IrisData] (&#xA;    [SepalLength] nvarchar(50),&#xA;    [SepalWidth] nvarchar(50),&#xA;    [PetalLength] nvarchar(50),&#xA;    [PetalWidth] nvarchar(50),&#xA;    [Class] nvarchar(50)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -2829,11 +2822,11 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="341,42"
+          Size="350,42"
           Id="Package\Data Flow Task - Insert data from csv to SQL serv table 1"
           TopLeft="387.166666666667,257" />
         <NodeLayout
-          Size="307,42"
+          Size="316,42"
           Id="Package\Execute SQL Task - Create Table as per headers 1"
           TopLeft="777.333333333333,256.611111111112" />
         <NodeLayout
@@ -2850,14 +2843,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-49.1666666666667,0"
+              EndConnector="-40.1666666666667,0"
               Start="0,0"
-              End="-41.6666666666667,0">
+              End="-32.6666666666667,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-41.6666666666667,0" />
+                    End="-32.6666666666667,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2894,9 +2887,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-10.5555555555554,62.7777777777777"
+              EndConnector="-1.55555555555543,62.7777777777782"
               Start="0,0"
-              End="-3.05555555555543,62.7777777777777">
+              End="5.94444444444457,62.7777777777782">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2907,13 +2900,13 @@
                     Point2="22.5,0"
                     Point3="22.5,4" />
                   <mssgle:LineSegment
-                    End="22.5,58.7777777777777" />
+                    End="22.5,58.7777777777782" />
                   <mssgle:CubicBezierSegment
-                    Point1="22.5,58.7777777777777"
-                    Point2="22.5,62.7777777777777"
-                    Point3="18.5,62.7777777777777" />
+                    Point1="22.5,58.7777777777782"
+                    Point2="22.5,62.7777777777782"
+                    Point3="18.5,62.7777777777782" />
                   <mssgle:LineSegment
-                    End="-3.05555555555543,62.7777777777777" />
+                    End="5.94444444444457,62.7777777777782" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2933,7 +2926,7 @@
         <NodeLayout
           Size="171,42"
           Id="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination"
-          TopLeft="188.5,165.5" />
+          TopLeft="435.5,354.5" />
         <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task - Insert data from csv to SQL serv table\Flat File Source"
@@ -2944,26 +2937,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="30.5,39.5"
+              EndConnector="277.5,228.5"
               Start="0,0"
-              End="30.5,32">
+              End="277.5,221">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.75" />
+                    End="0,110.25" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.75"
-                    Point2="0,19.75"
-                    Point3="4,19.75" />
+                    Point1="0,110.25"
+                    Point2="0,114.25"
+                    Point3="4,114.25" />
                   <mssgle:LineSegment
-                    End="26.5,19.75" />
+                    End="273.5,114.25" />
                   <mssgle:CubicBezierSegment
-                    Point1="26.5,19.75"
-                    Point2="30.5,19.75"
-                    Point3="30.5,23.75" />
+                    Point1="273.5,114.25"
+                    Point2="277.5,114.25"
+                    Point3="277.5,118.25" />
                   <mssgle:LineSegment
-                    End="30.5,32" />
+                    End="277.5,221" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2998,35 +2991,35 @@
           Id="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source"
           TopLeft="168,84" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination"
-          TopLeft="331.5,340.5" />
+          Size="180,42"
+          Id="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1"
+          TopLeft="465,198" />
         <EdgeLayout
           Id="Package\Data Flow Task - Insert data from csv to SQL serv table 1.Paths[Flat File Source Output]"
           TopLeft="243.5,126">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="173.5,214.5"
+              EndConnector="311.5,72"
               Start="0,0"
-              End="173.5,207">
+              End="311.5,64.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,103.25" />
+                    End="0,32" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,103.25"
-                    Point2="0,107.25"
-                    Point3="4,107.25" />
+                    Point1="0,32"
+                    Point2="0,36"
+                    Point3="4,36" />
                   <mssgle:LineSegment
-                    End="169.5,107.25" />
+                    End="307.5,36" />
                   <mssgle:CubicBezierSegment
-                    Point1="169.5,107.25"
-                    Point2="173.5,107.25"
-                    Point3="173.5,111.25" />
+                    Point1="307.5,36"
+                    Point2="311.5,36"
+                    Point3="311.5,40" />
                   <mssgle:LineSegment
-                    End="173.5,207" />
+                    End="311.5,64.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3039,7 +3032,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination">
+    design-time-name="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
