@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="27"
-  DTS:VersionGUID="{3B728608-8F43-4F8C-B8A6-C263716440BC}">
+  DTS:VersionBuild="61"
+  DTS:VersionGUID="{66A0D2AF-38EF-4DA6-B23E-3EE6E7C00C4B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -599,6 +599,102 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{56AFEFB7-45CD-429D-B509-56F1981FCBBF}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:Unicode="True"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\jaqbs\source\repos\SSIS_Projects\Integration Services ETL\DATA_SETS\Iris_db\bezdekIris.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SepalLength"
+              DTS:DTSID="{8C7B37A0-D4DA-4F1D-8DD0-E32A21103DCE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SepalWidth"
+              DTS:DTSID="{02C6DB37-D099-461E-BA7C-0DA444B53FC1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PetalLength"
+              DTS:DTSID="{EB144A49-1634-4D36-B320-C10B890A795D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PetalWidth"
+              DTS:DTSID="{9771FA84-4B9D-40DC-80C2-3B96C2157C8D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Class"
+              DTS:DTSID="{E0688C58-A875-4005-B155-DA855EC1BF02}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SERVERQB.ExternalAdmin]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F0043F0E-D90C-4D3D-AC46-4A0FD4D501AC}"
+      DTS:ObjectName="SERVERQB.ExternalAdmin">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Provider=SSISOLEDB.3;Persist Security Info=True;Location=SSIS_db;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB4AOs+4Ub/5oC9NNfcESgDUzEL+FiIUlhPHYFnNGd2qAAAAAAOgAAAAAIAACAAAADQ4SyobecUSdmClUxpbVBOSu7SHhuumOCqTvysuhQMzSAAAACRrnP19ft/jM6mSR6AJCjy4iBDqDK3C8+gRz1PNdnPi0AAAAD3NOpLJl+fL5vqBHtvRr4ZuAJqzGPS9qcp/T+RZkpKFgaWhWRcEV/7vlEAtkq2mq9uCODxAwjppH5mVPLjoh1x</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SERVERQB.ExternalAdmin 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2BB50AAC-8F51-4AE8-8D18-0F704F308A2B}"
+      DTS:ObjectName="SERVERQB.ExternalAdmin 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Provider=SSISOLEDB.3;Persist Security Info=True;Location=SSIS_db;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABoyN6l3AQgCraZb1UlElyDTEYGJLK7z2g29yO7stwV7gAAAAAOgAAAAAIAACAAAACVxieVfAUT3ulXEi+tkhLs04hku4pvJtVG9se3nF9TwyAAAADmMuZaYKjvUSRi/LfCD1N4n/Q7hkudnnnRsej1JnFXwUAAAAAuSyAOQBv33GuNxzWPpmwAUlmyjQckhsCwHsKCgjB/BWDw/U6yyJ77awm7YEvdzTvQjK8kocz07M8wxytCQiCp</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{751F3345-3A67-4608-B554-E0EAF43704F9}"
@@ -609,7 +705,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAfz1T3vNO/eobGkJnEJpz4Hdpjze5Y/A3s1+okHjz6LQAAAAAOgAAAAAIAACAAAACyi/IiWWTLPnKlMVI2HG9oqke7pOmR7uB67dJPLFl9PyAAAADYPLAtQLbCEJLiLsTWNt4moZvyUSzutr9ckjCgh7NRbkAAAABnZO6ONEUBhADlGp/bPSmCokjRAN12N1lPrT2Cw505y+bJ7k42fRx0oQGVjjSnh3b9mPKvEfkxivSP0SPGUvUc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABwKpSSjUJdPknOL+PXm60ZrQNv5b6b8EgWcx1ONJDRcgAAAAAOgAAAAAIAACAAAABiBlKyHuRCf0E61NnZV1Y5mSLqbD9ApL0UXawQnP5fmCAAAAChL9xLY4gudQoYqKkDaV/dpFpI5Q6JpvQ3y6QQch/YC0AAAACSrOOYwPYF1L2jrmndPxSmJhQ484rX1CdOliPYwuPi8Uh1Yf0SpDQU+UTra5105TBAimlk0N0ZczZOm6M3JZjr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -624,7 +720,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACOhOyuivy3kilCmnobprNwtVn/L1YfV3bcA5lsZ1bZ7wAAAAAOgAAAAAIAACAAAAD5qdTd7gVHYWiHMkgCKLnegNJYJNLyFnm7CWC3RS1svyAAAADhEPBmMYtHzZcAFHhAIE/Wtcd38IR5pkGBA0P1cNHoMUAAAAD049nv2+RU4s8hFfTeEQMXGfNNU+Qm1gx/sZwWEeTWUxJXSHo9yNDLU2jeXOoU2hmn2rOFt+VC7ka1tx7liPhs</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABChQnEe0L2kaSoDcVJuvVYcGHBHZ8x2z4CJMUXvFvDAwAAAAAOgAAAAAIAACAAAAAFVw9+u2DFDYFXSTMlfxy8lp8tr4Dz6Zt6QG2vvH4JGiAAAADN0TAqg0Far/v1pqctvK+fFvWkytJOfgNv1GPDu5hB2UAAAAD2MWGPTdcU9EAQvIuAM8R7kIRhokCFH7qFVsZhxKxRkext4k0AtjGe4In8pSeRzHl8NNEBzrdjTwyYk7hLtHSI</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -639,7 +735,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABVxcGAlJ3u7fi7Vtn9rROIyL/TDGeUQ4ulB4Ksu/paAAAAAAAOgAAAAAIAACAAAAD98DkndAntvHv+YRaWDyZcD5UiAAxn28K0DCEd0IDkoiAAAABFsjwHflbnkjTTaRxM4O2U/E++v1xL1V5zEHKXl69aZ0AAAAD5lTEowRhvHsOL+IFl6i2skU+CKWGeccvYVNu93Aabowj1v6i4Vu3vO0RCKX0258hh5AIQgagL4QTQhJVrLauQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADgZOK4f8j3OLHU7/g+QRmpfK0cabQ/FKn/7kYdjrQ2DwAAAAAOgAAAAAIAACAAAABIre6JrI2kjQSU8rV9oS41TZ1egojE0Niw4z8EtGjH2CAAAADFzxVQefFFD0kdu8z3hQLNfuBaALNxp80gDsu5i8qrmkAAAACBTfvzEgsChqHXA2GNKkUzdblHgDwL8Lc1YvtbKjB5AGG5jBB3Dm3ztDBRH0UliAVTCXXDSKEkwffUMcrpxivc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -654,7 +750,112 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACquuD5DsdKGG2zvggd9/9a4I2wVdTrCAzBHJtoXprfbgAAAAAOgAAAAAIAACAAAABj6U99hGFJOmjvSTpE7pKmsiNUH3VHZYNvcL6Mb9WQ4iAAAAAvbUKziKfhDwftlhQr90bu1Va1EfQ72bAZWfm/I6i2ikAAAABSvGQwt8duM9GugmTNbqID0xyHUdVpQ1OHIEmWqi6sgaFSX/TamlLjlzDkGQTCNWUzo+qGXm+EEt2L0owTOKh/</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAJzn8RC1Z4PjhfPe2fs9XpVFZ/pkDKEL0Smxwotw2IZQAAAAAOgAAAAAIAACAAAACeVpHw79BVgeRfflI8LhoKt8jkgCcqTM11CfrglmruDiAAAABQAQLYrXQLuZZdQjaPlRYUCaTbdfuMPadP4LUEj584+UAAAAAf3SiMKWkUmIMJ+fFEjC5z3OCShrrPLXgbP5hqlM9j7C+UttAOIoAG183B12TNd0xvyeXAouH2EoyhN33vJCna</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3722BB53-D2D4-4CD4-9D99-8C88ADE05FDD}"
+      DTS:ObjectName="SERVERQB.SSIS_db.ExternalAdmin 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Initial Catalog=SSIS_db;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package1-{3722BB53-D2D4-4CD4-9D99-8C88ADE05FDD}SERVERQB.SSIS_db.ExternalAdmin 4;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABg4uG+OV8ZXnNz1UjuWV8uVze9Db9mlZXe3HB+9vMXlQAAAAAOgAAAAAIAACAAAAAq/RZMGxoxqJSAbCBjg9zQfteEqiOIrk4NEXtSifwQDSAAAAD0T44/ruu+k3DdC0YuxC3TrQdLiT0nAxyEKlpZDe+6DUAAAAC7U5iK6ydbq54uY0MvclcMH+vkewArGDNUtNSu8MkfJXD28OGtQYqbYJcg/lNxvFBk6gMmoMcrDIYI+t69igZc</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 5]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2BD140E0-1477-4BF0-A074-06A22F86A08D}"
+      DTS:ObjectName="SERVERQB.SSIS_db.ExternalAdmin 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Initial Catalog=SSIS_db;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package1-{2BD140E0-1477-4BF0-A074-06A22F86A08D}SERVERQB.SSIS_db.ExternalAdmin 5;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAChZjNU5PeKcPl4EvjsFukJmpZ6/Y6Ji3Iu5ssi97KYqAAAAAAOgAAAAAIAACAAAAAgB0+rXc9DykXNlVNjcTUXB1cp9MLIzkQhPgx+56LfzyAAAAAKA9X5fghRQFb6TMR4faOVOQXoj4C9IwULpvj6KndgBUAAAABuhfkDSMtmC3lTEM58HtJpQJUQKXJuV2lsHlXpJUgF3qpIAIyjMBLpOiS89doLygocxfHzhiS6P6UQH2ITUAi0</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 6]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6F06D7B0-E33E-4271-9559-B56A8A9C69DA}"
+      DTS:ObjectName="SERVERQB.SSIS_db.ExternalAdmin 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Initial Catalog=SSIS_db;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package1-{6F06D7B0-E33E-4271-9559-B56A8A9C69DA}SERVERQB.SSIS_db.ExternalAdmin 6;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACcldgFr4iKr6IgPFGFczHqpEW5NT5KhuNbqa9n+tyfQgAAAAAOgAAAAAIAACAAAAAwH0KcWknJb8GHoTLz/5RUrpeaq2EJTosOH6GJ0WKBJiAAAAAlLbVuVW4DL6ULUWkk8qBWvPpoWHZfD0Ta6BQniKRUpkAAAABXmRYghNRjv280aukwjelxIpSdl3mdvIQUTpNMlY6kQ9GVRRAzcOs+GHzSrUvjyssOvvmdBtBZYEMNLIJ0mw6g</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 7]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1FB75821-5072-465B-8AFE-2EA960F32DCA}"
+      DTS:ObjectName="SERVERQB.SSIS_db.ExternalAdmin 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Initial Catalog=SSIS_db;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package1-{1FB75821-5072-465B-8AFE-2EA960F32DCA}SERVERQB.SSIS_db.ExternalAdmin 7;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACgNjfauNcLR39TacDIgmeG4dy+CE8hC2IdPv/ieMNAEgAAAAAOgAAAAAIAACAAAAD51NRm+3nMQZVepKaXkC7TYBw6+zlSdO+ZX+rJSWUXpCAAAAA4wElaVaYny+wnupG24umiX7o6C+/Yj9/lGjUZCQS/w0AAAABVMB7sJjfUetJ826DKqUkFjZF1EKrLORZhNAjymZ4/6Pe8FP5xSqmInpleJSfrgEvRuV2uKVmDLAf33KhHsRtM</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 8]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{AC639BF8-2AE9-4AFD-8862-5A6BC1231A3F}"
+      DTS:ObjectName="SERVERQB.SSIS_db.ExternalAdmin 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Initial Catalog=SSIS_db;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package1-{AC639BF8-2AE9-4AFD-8862-5A6BC1231A3F}SERVERQB.SSIS_db.ExternalAdmin 8;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADdjbKETndxeA5jUxdmFCU722GlYfQM/tHr3Phos9pPPAAAAAAOgAAAAAIAACAAAADahgNX9B8i7Fk5BhlkLu6jdLfA3X/RbRSTK8GAgY7UvSAAAADdISsqLeNnyaGYlcOuz13nZxKjTE26jTH/505LkrYALEAAAAAakcfyzSPTaW53DQ0bc6F2UEa4vIZLIMggMC3yTbODTG7FPQZ+utS1K6QWk6EPaIxuBbf60B680i+hsLsqcCSi</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 9]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{63CA4C8A-C50B-42D7-91A0-D5F3018DAF13}"
+      DTS:ObjectName="SERVERQB.SSIS_db.ExternalAdmin 9">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Initial Catalog=SSIS_db;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package1-{63CA4C8A-C50B-42D7-91A0-D5F3018DAF13}SERVERQB.SSIS_db.ExternalAdmin 9;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABsFjraWc/1L8xmyth63fijOq+CdiRiwKkxIVlTKRTQLwAAAAAOgAAAAAIAACAAAAC7MsY8EG5bBvR8c1RBH0TSi8ABMZNTr5cMuV4J1KhUPiAAAADsSgc4FG1i61e1JGARl1COAyu1xi3zSnkenm6tEi/mdUAAAAAcK2HMmhfBDyd87JCFZNj6o8OsJyF5m8kn8mus5Zw87QcBM8vAW/tXHJERcoMEWFw0eRq+s8wQDrXNNYEaLhWl</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{36717C3A-12CF-42E7-AFBC-6AE1A921E692}"
+      DTS:ObjectName="SERVERQB.SSIS_db.ExternalAdmin1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Initial Catalog=SSIS_db;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADpua+1HLen6jXgqBklKh6wHHi+odxzLI6OxyEIbKFj2QAAAAAOgAAAAAIAACAAAAA/NLn4We3SRpOVsw9yjXeRDy3QtwydKy6Rrq5xe8O7sCAAAAChyTesjg9YMapuh8/gaqmpnHq2O93ZGtyS0AW1JkQMfEAAAACksSQrXvDHiEbS8nCekOLgoa2YLfB/1Idpyo++2hi7izuA6sETkNDGKTgai40DFBg62E0rp/UzR4q//s/IdBBi</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1994,6 +2195,395 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{6af8d2f7-6abc-4cd7-b82e-fe2238b6ccb4}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task - Insert data from csv to SQL serv table 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[SepalLength]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SepalLength]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[SepalLength]"
+                      name="SepalLength"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[SepalWidth]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SepalWidth]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[SepalWidth]"
+                      name="SepalWidth"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[PetalLength]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PetalLength]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[PetalLength]"
+                      name="PetalLength"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[PetalWidth]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PetalWidth]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[PetalWidth]"
+                      name="PetalWidth"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[Class]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Class]"
+                      length="250"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[Class]"
+                      name="Class"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SepalLength]"
+                      dataType="wstr"
+                      length="50"
+                      name="SepalLength" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SepalWidth]"
+                      dataType="wstr"
+                      length="50"
+                      name="SepalWidth" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PetalLength]"
+                      dataType="wstr"
+                      length="50"
+                      name="PetalLength" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PetalWidth]"
+                      dataType="wstr"
+                      length="50"
+                      name="PetalWidth" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Class]"
+                      dataType="wstr"
+                      length="50"
+                      name="Class" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      dataType="nText"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[IrisData]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin 9]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="IgnoreFailure"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SepalLength]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="SepalLength"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SepalLength]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[SepalLength]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SepalWidth]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="SepalWidth"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SepalWidth]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[SepalWidth]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PetalLength]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="PetalLength"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PetalLength]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[PetalLength]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PetalWidth]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="PetalWidth"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PetalWidth]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[PetalWidth]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Class]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="Class"
+                      externalMetadataColumnId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Class]"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output].Columns[Class]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SepalLength]"
+                      dataType="numeric"
+                      name="SepalLength"
+                      precision="3"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SepalWidth]"
+                      dataType="numeric"
+                      name="SepalWidth"
+                      precision="4"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PetalLength]"
+                      dataType="numeric"
+                      name="PetalLength"
+                      precision="4"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PetalWidth]"
+                      dataType="numeric"
+                      name="PetalWidth"
+                      precision="4"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Class]"
+                      codePage="1250"
+                      dataType="str"
+                      length="250"
+                      name="Class" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task - Insert data from csv to SQL serv table 1.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Execute Powershell Script for data normalisation and conversion to csv with headers from seperate file"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Execute Process Task"
@@ -2006,7 +2596,25 @@
       <DTS:ObjectData>
         <ExecuteProcessData
           Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
-          Arguments="-NoProfile -ExecutionPolicy ByPass -File C:\Users\jaqbs\source\repos\SSIS_Projects\Integration Services ETL\DATA_SETS\Convert-Data-To-Csv.ps1"
+          Arguments="-NoProfile -ExecutionPolicy ByPass -File C:\Users\jaqbs\source\repos\SSIS_Projects\Integration Services ETL\DATA_SETS\Flags_db\Convert-Data-To-Csv.ps1"
+          TimeOut="999"
+          FailTaskIfReturnCodeIsNotSuccessValue="False" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute Powershell Script for data normalisation and conversion to csv with headers from seperate file 1"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{3e9190fc-d56f-412e-93f1-b9b1afd3eedc}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Powershell Script for data normalisation and conversion to csv with headers from seperate file 1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+          Arguments="-NoProfile -ExecutionPolicy ByPass -File C:\Users\jaqbs\source\repos\SSIS_Projects\Integration Services ETL\DATA_SETS\Iris_db\Convert-Data-To-Csv.ps1"
           TimeOut="999"
           FailTaskIfReturnCodeIsNotSuccessValue="False" />
       </DTS:ObjectData>
@@ -2027,6 +2635,54 @@
           SQLTask:SqlStatementSource="DROP TABLE IF EXISTS dbo.Flags&#xA;CREATE TABLE Flags(&#xA;   Name           VARCHAR(24) NOT NULL PRIMARY KEY&#xA;  ,Landmass       INTEGER  NOT NULL&#xA;  ,Zone           INTEGER  NOT NULL&#xA;  ,Area           INTEGER  NOT NULL&#xA;  ,Population     INTEGER  NOT NULL&#xA;  ,Language       INTEGER  NOT NULL&#xA;  ,Religion       INTEGER  NOT NULL&#xA;  ,Bars           INTEGER  NOT NULL&#xA;  ,Stripes        INTEGER  NOT NULL&#xA;  ,Colours        INTEGER  NOT NULL&#xA;  ,Red            BIT  NOT NULL&#xA;  ,Green          BIT  NOT NULL&#xA;  ,Blue           BIT  NOT NULL&#xA;  ,Gold           BIT  NOT NULL&#xA;  ,White          BIT  NOT NULL&#xA;  ,Black          BIT  NOT NULL&#xA;  ,Orange         BIT  NOT NULL&#xA;  ,Mainhue        VARCHAR(7) NOT NULL&#xA;  ,Circles        INTEGER  NOT NULL&#xA;  ,Crosses        INTEGER  NOT NULL&#xA;  ,Saltires       BIT  NOT NULL&#xA;  ,Quarters       INTEGER  NOT NULL&#xA;  ,Sunstars       INTEGER  NOT NULL&#xA;  ,Crescent       BIT  NOT NULL&#xA;  ,Triangle       BIT  NOT NULL&#xA;  ,Icon           BIT  NOT NULL&#xA;  ,Animate        BIT  NOT NULL&#xA;  ,Text           BIT  NOT NULL&#xA;  ,TopleftColour  VARCHAR(7) NOT NULL&#xA;  ,BotrightColour VARCHAR(7) NOT NULL&#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task - Create Table as per headers 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{7dfb87f7-4cf1-44d1-93f1-4e198cfe7a03}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task - Create Table as per headers 1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{751F3345-3A67-4608-B554-E0EAF43704F9}"
+          SQLTask:SqlStatementSource="Drop table dbo.[IrisData]&#xA;CREATE TABLE [IrisData](&#xA;   SepalLength NUMERIC(3,1) NOT NULL&#xA;  ,SepalWidth  NUMERIC(4,1) NOT NULL&#xA;  ,PetalLength NUMERIC(4,1) NOT NULL&#xA;  ,PetalWidth  NUMERIC(4,1) NOT NULL&#xA;  ,Class       VARCHAR(16) NOT NULL PRIMARY KEY&#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task - Truncate Table ifexists"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{eeedf9d3-8894-4508-8a53-162234f5d9bd}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task - Truncate Table ifexists"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{751F3345-3A67-4608-B554-E0EAF43704F9}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.[FlagsData] " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task - Truncate Table ifexists 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{7975d297-ec68-4986-923f-bc4f46f189b0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task - Truncate Table ifexists 1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6F06D7B0-E33E-4271-9559-B56A8A9C69DA}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.[IrisData] " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -2040,11 +2696,43 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{B0AD79A0-EC8D-45D1-94CD-226504C28026}"
-      DTS:From="Package\Execute Powershell Script for data normalisation and conversion to csv with headers from seperate file"
+      DTS:DTSID="{4df0daa6-dda9-4c12-a8cf-6a16c4ec2b34}"
+      DTS:From="Package\Execute SQL Task - Create Table as per headers 1"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Data Flow Task - Insert data from csv to SQL serv table 1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{4F8E4663-4C87-42DB-BCC9-880C1DE28129}"
+      DTS:From="Package\Execute Powershell Script for data normalisation and conversion to csv with headers from seperate file"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Execute SQL Task - Truncate Table ifexists" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{b03b38f1-0009-4e6f-9c0b-b5fca2cde5b8}"
+      DTS:From="Package\Execute Powershell Script for data normalisation and conversion to csv with headers from seperate file 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3 1"
+      DTS:To="Package\Execute SQL Task - Truncate Table ifexists 1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{E9FE2EB3-C05D-4CB8-A56F-988D63FE5E77}"
+      DTS:From="Package\Execute SQL Task - Truncate Table ifexists"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
       DTS:To="Package\Execute SQL Task - Create Table as per headers" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{5dfee802-bd0e-4808-848b-21b73ba43b63}"
+      DTS:From="Package\Execute SQL Task - Truncate Table ifexists 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4 1"
+      DTS:To="Package\Execute SQL Task - Create Table as per headers 1" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -2057,41 +2745,29 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="341,42"
           Id="Package\Data Flow Task - Insert data from csv to SQL serv table"
-          TopLeft="176.5,303.5" />
+          TopLeft="272.833333333333,132.944444444444" />
         <NodeLayout
           Size="307,42"
           Id="Package\Execute SQL Task - Create Table as per headers"
-          TopLeft="157,176" />
+          TopLeft="795.111111111111,130.333333333333" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="310.5,218">
+          TopLeft="795.111111111111,152.638888888889">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="36.5,85.5"
+              EndConnector="-181.277777777778,0"
               Start="0,0"
-              End="36.5,78">
+              End="-173.777777777778,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,38.75"
-                    Point2="0,42.75"
-                    Point3="4,42.75" />
-                  <mssgle:LineSegment
-                    End="32.5,42.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="32.5,42.75"
-                    Point2="36.5,42.75"
-                    Point3="36.5,46.75" />
-                  <mssgle:LineSegment
-                    End="36.5,78" />
+                    End="-173.777777777778,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2104,32 +2780,140 @@
           Size="562,42"
           Id="Package\Execute Powershell Script for data normalisation and conversion to csv with headers from seperate file"
           TopLeft="185,62" />
+        <NodeLayout
+          Size="307,42"
+          Id="Package\Execute SQL Task - Truncate Table ifexists"
+          TopLeft="794.666666666667,62.3333333333333" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="466,104">
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="747,83.1666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-155.5,72"
+              EndConnector="47.6666666666669,0"
               Start="0,0"
-              End="-155.5,64.5">
+              End="40.1666666666669,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32"
-                    Point2="0,36"
-                    Point3="-4,36" />
+                    End="40.1666666666669,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="948.388888888889,104.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26"
+              Start="0,0"
+              End="0,18.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-151.5,36" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-151.5,36"
-                    Point2="-155.5,36"
-                    Point3="-155.5,40" />
+                    End="0,18.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="341,42"
+          Id="Package\Data Flow Task - Insert data from csv to SQL serv table 1"
+          TopLeft="387.166666666667,257" />
+        <NodeLayout
+          Size="307,42"
+          Id="Package\Execute SQL Task - Create Table as per headers 1"
+          TopLeft="777.333333333333,256.611111111112" />
+        <NodeLayout
+          Size="562,42"
+          Id="Package\Execute Powershell Script for data normalisation and conversion to csv with headers from seperate file 1"
+          TopLeft="183.888888888889,193.833333333333" />
+        <NodeLayout
+          Size="307,42"
+          Id="Package\Execute SQL Task - Truncate Table ifexists 1"
+          TopLeft="787.888888888889,193.833333333333" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="777.333333333333,277.805555555556">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-49.1666666666667,0"
+              Start="0,0"
+              End="-41.6666666666667,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-155.5,64.5" />
+                    End="-41.6666666666667,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3 1]"
+          TopLeft="745.888888888889,214.833333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="42,0"
+              Start="0,0"
+              End="34.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="34.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4 1]"
+          TopLeft="1094.88888888889,214.833333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10.5555555555554,62.7777777777777"
+              Start="0,0"
+              End="-3.05555555555543,62.7777777777777">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5,0"
+                    Point2="22.5,0"
+                    Point3="22.5,4" />
+                  <mssgle:LineSegment
+                    End="22.5,58.7777777777777" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.5,58.7777777777777"
+                    Point2="22.5,62.7777777777777"
+                    Point3="18.5,62.7777777777777" />
+                  <mssgle:LineSegment
+                    End="-3.05555555555543,62.7777777777777" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2193,6 +2977,69 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task - Insert data from csv to SQL serv table\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Data Flow Task - Insert data from csv to SQL serv table 1">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task - Insert data from csv to SQL serv table 1\Flat File Source"
+          TopLeft="168,84" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination"
+          TopLeft="331.5,340.5" />
+        <EdgeLayout
+          Id="Package\Data Flow Task - Insert data from csv to SQL serv table 1.Paths[Flat File Source Output]"
+          TopLeft="243.5,126">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="173.5,214.5"
+              Start="0,0"
+              End="173.5,207">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,103.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,103.25"
+                    Point2="0,107.25"
+                    Point3="4,107.25" />
+                  <mssgle:LineSegment
+                    End="169.5,107.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="169.5,107.25"
+                    Point2="173.5,107.25"
+                    Point3="173.5,111.25" />
+                  <mssgle:LineSegment
+                    End="173.5,207" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task - Insert data from csv to SQL serv table 1\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
