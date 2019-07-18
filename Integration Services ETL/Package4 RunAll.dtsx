@@ -1,0 +1,427 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/13/2019 8:58:15 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="QB"
+  DTS:CreatorName="QB\jaqbs"
+  DTS:DTSID="{7A77DCF6-F566-433F-9A36-EAE1F22CE2E6}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1300.371"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package4 RunAll"
+  DTS:PackageType="5"
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{C7BAAF9A-7045-4516-AAC7-781A6B1C7FDB}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_db.ExternalAdmin]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C5393436-2C77-40FD-A87E-592C5A0AAB05}"
+      DTS:ObjectName="SERVERQB.SSIS_db.ExternalAdmin">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Initial Catalog=SSIS_db;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{C5393436-2C77-40FD-A87E-592C5A0AAB05}SERVERQB.SSIS_db.ExternalAdmin;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADQRy69GxmQWag+YN2TRKa9C9lyy7jkvWhP8edlmaQV+QAAAAAOgAAAAAIAACAAAABKWvmUz7hy8HUVqFbHYnUHUlkzfjQn7wdB7Za5Tc31UiAAAAD6Z/YZMOs0ezbkcHv+EmgXUhz+QR4bk1Tu5yI3irm0zkAAAACsX+TGfiLQSUE+wrXMg79a6UCeD32bgPAJjHMFOSVjKiUiGigCez5YqMmff2MxXQwUOypYQd8ut/BQ8r86HPa7</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Create Log Table SQL"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D095FA38-3989-4A23-93F9-8F895A669E6A}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create Log Table SQL"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5393436-2C77-40FD-A87E-592C5A0AAB05}"
+          SQLTask:SqlStatementSource="DROP TABLE [dbo].[Log]&#xA;CREATE TABLE [dbo].[Log](&#xA;&#x9;[Date] [datetime] NULL,&#xA;&#x9;[User] [nvarchar](50) NULL,&#xA;&#x9;[PcgNam] [nvarchar](50) NULL&#xA;) ON [PRIMARY]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create log to logtable"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{2c5470af-9bc7-44f8-8460-50bf35e1279d}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create log to logtable"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5393436-2C77-40FD-A87E-592C5A0AAB05}"
+          SQLTask:SqlStatementSource="INSERT INTO [dbo].[Log]&#xA;           ([Date]&#xA;           ,[User]&#xA;           ,[PcgNam])&#xA;     VALUES&#xA;           (GetDate()&#xA;           ,CURRENT_USER&#xA;           ,'DB_IRIS')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create log to logtable 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{be81a413-64eb-46d2-bb14-ebde17936e41}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create log to logtable 1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5393436-2C77-40FD-A87E-592C5A0AAB05}"
+          SQLTask:SqlStatementSource="INSERT INTO [dbo].[Log]&#xA;           ([Date]&#xA;           ,[User]&#xA;           ,[PcgNam])&#xA;     VALUES&#xA;           (GetDate()&#xA;           ,CURRENT_USER&#xA;           ,'DB_Flags')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create log to logtable 2"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5f87a401-fcee-4170-acc3-438c690ae390}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create log to logtable 2"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5393436-2C77-40FD-A87E-592C5A0AAB05}"
+          SQLTask:SqlStatementSource="INSERT INTO [dbo].[Log]&#xA;           ([Date]&#xA;           ,[User]&#xA;           ,[PcgNam])&#xA;     VALUES&#xA;           (GetDate()&#xA;           ,CURRENT_USER&#xA;           ,'DB_ZOO')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute Package Task DB Flags"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{234502da-184f-495c-a681-cbd1859d3df2}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Package Task DB Flags"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>Package3 DB Flags.dtsx</PackageName>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute Package Task DB Iris"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{922329F9-740D-4E04-9272-2E67AB14E4A2}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Package Task DB Iris"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>Package2 DB Iris.dtsx</PackageName>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute Package Task DB Zoo"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{639f421f-c6bd-488c-8f9b-0f6c1080e52b}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Package Task DB Zoo"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>Package1 DB Zoo.dtsx</PackageName>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{F13FD1BF-AB68-4BDF-9410-48F3BC51C804}"
+      DTS:From="Package\Create Log Table SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Execute Package Task DB Flags" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{0B8F7ECA-4188-48D2-ABB3-A0C042CEE5DE}"
+      DTS:From="Package\Create Log Table SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Execute Package Task DB Zoo" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{B68F44D5-6094-4B75-8396-F37F7DD064DD}"
+      DTS:From="Package\Create Log Table SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Execute Package Task DB Iris" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{D6C0977B-239E-40B8-9D34-33B7FD18A6CC}"
+      DTS:From="Package\Execute Package Task DB Iris"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Create log to logtable" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{675EFB1F-4483-4179-95C5-8865966B7DF3}"
+      DTS:From="Package\Execute Package Task DB Flags"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Create log to logtable 1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{775C030A-390E-484B-B6EE-44F3777CD6B2}"
+      DTS:From="Package\Execute Package Task DB Zoo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Create log to logtable 2" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="219,42"
+          Id="Package\Execute Package Task DB Iris"
+          TopLeft="143,161" />
+        <NodeLayout
+          Size="221,42"
+          Id="Package\Execute Package Task DB Zoo"
+          TopLeft="790,157" />
+        <NodeLayout
+          Size="228,42"
+          Id="Package\Execute Package Task DB Flags"
+          TopLeft="479,150" />
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Create Log Table SQL"
+          TopLeft="495,56" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="589.25,98">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52"
+              Start="0,0"
+              End="0,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="628.75,98">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="271.75,59"
+              Start="0,0"
+              End="271.75,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.2377495462795" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.2377495462795"
+                    Point2="0,20.2377495462795"
+                    Point3="4,20.2377495462795" />
+                  <mssgle:LineSegment
+                    End="267.75,20.2377495462795" />
+                  <mssgle:CubicBezierSegment
+                    Point1="267.75,20.2377495462795"
+                    Point2="271.75,20.2377495462795"
+                    Point3="271.75,24.2377495462795" />
+                  <mssgle:LineSegment
+                    End="271.75,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="542.25,98">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-289.75,63"
+              Start="0,0"
+              End="-289.75,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.6098003629764" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.6098003629764"
+                    Point2="0,21.6098003629764"
+                    Point3="-4,21.6098003629764" />
+                  <mssgle:LineSegment
+                    End="-285.75,21.6098003629764" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-285.75,21.6098003629764"
+                    Point2="-289.75,21.6098003629764"
+                    Point3="-289.75,25.6098003629764" />
+                  <mssgle:LineSegment
+                    End="-289.75,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Create log to logtable"
+          TopLeft="167,252" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="254.75,203">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49"
+              Start="0,0"
+              End="0,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="190,42"
+          Id="Package\Create log to logtable 1"
+          TopLeft="511,253" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="593,192">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="13,61"
+              Start="0,0"
+              End="13,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.5"
+                    Point2="0,30.5"
+                    Point3="4,30.5" />
+                  <mssgle:LineSegment
+                    End="9,30.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9,30.5"
+                    Point2="13,30.5"
+                    Point3="13,34.5" />
+                  <mssgle:LineSegment
+                    End="13,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="190,42"
+          Id="Package\Create log to logtable 2"
+          TopLeft="815,256" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="900.5,199">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.5,57"
+              Start="0,0"
+              End="9.5,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.5"
+                    Point2="0,28.5"
+                    Point3="4,28.5" />
+                  <mssgle:LineSegment
+                    End="5.5,28.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.5,28.5"
+                    Point2="9.5,28.5"
+                    Point3="9.5,32.5" />
+                  <mssgle:LineSegment
+                    End="9.5,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
