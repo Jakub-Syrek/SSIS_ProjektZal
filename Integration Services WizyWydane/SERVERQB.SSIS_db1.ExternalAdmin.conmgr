@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SERVERQB.SSIS_db1.ExternalAdmin"
+  DTS:DTSID="{BADF7E85-AD61-403E-B05F-5A177193F7B4}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Initial Catalog=SSIS_db1;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAACAAAAAAAQZgAAAAEAACAAAABziNwh2GuhMJOcez9nZAPaFoWrxL9OkOtxaRRPCyDQDQAAAAAOgAAAAAIAACAAAAAxn9nYB9XWObgWSq6tjjqSy5HGr+T7TUh0XIWBO3+6GIAAAABmlQtSp/OisI5aiXW69MMNC1d3YW4SiQafsK/ZT+zy/jARPNmkqDh8RBYoxUmb/PiyIoRdGuu5urF1tKc/+M1x7nj/mkYntrV9lDDMgp1Oe5Z5vlF6jZ5POyNmuSsMU1TQtnYWFe+h+vm+7Mg7DMXnU7SvDKWUI1n1FMlK05fdaUAAAAB1YDYdkuM95wtJMi6goVhuaFt4oQV4sgqzCIE2EjLkc/bcENXI65YxOf5tzvWtIYaTtInS3qzp1bzT/m8OcaNr</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
