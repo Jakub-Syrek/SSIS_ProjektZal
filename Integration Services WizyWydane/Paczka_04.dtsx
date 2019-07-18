@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Paczka_04"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{E1FD1291-592F-4C53-BB90-8E1C05576367}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{39E35D9A-9F1D-4547-AEFA-B329F4F7E883}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -119,7 +119,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAYmpwlzlejPYRDDDRnw11maamjG3EY4F1+iklI8X9R7wAAAAAOgAAAAAIAACAAAACSZ/Aw47R4hQViTBReQj9aWcj0L9vOdfRk0Fj4a1FleyAAAAC+37jaqs36YppnK3Kfo5iyexCBihE7sShmhzJEsCDfvUAAAAB+lCBHFD72gxINLYYnFS+YRofccGKPRlpxFUdObMeTZzLRPXI3mUmVnYtzT689nMSjnEQM2NXU016Ok6k7UQLf</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACt2f6RD/ecrNdgEQjt0yTpaiwWgbSFzLgForCxpROlZgAAAAAOgAAAAAIAACAAAAC++1E2Kwhr7yqGLbS5/UXbeQcimuHVS9Xwslg0Bwno7iAAAABy0k0Dxl6VtpILbdDsN6jqacHCZizFBLO/hK4iZE55KUAAAABF3DMjxO25TPgVIc40oH78+ZTQFmECLNXmCTBZSOKx7coCthNTvRm9gvW90jl7eDhrEK0l2t7Kk+HM67VU40SR</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -660,7 +660,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[T04_DerivedColumns]</property>
+                  name="OpenRowset">[T04_DerivedColumns]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -766,26 +766,26 @@
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVD]"
                       lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVD]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VDVC]"
-                      cachedDataType="wstr"
-                      cachedLength="100"
-                      cachedName="VDVC"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VDVC]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[VDVC]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Wizy_SchengenPolska]"
-                      cachedDataType="wstr"
-                      cachedLength="100"
-                      cachedName="Wizy_SchengenPolska"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Wizy_SchengenPolska]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Wizy_SchengenPolska]" />
-                    <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ObywatelstwoSymbol]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="ObywatelstwoSymbol"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ObywatelstwoSymbol]"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ObywatelstwoSymbol]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VDVC]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="VDVC"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastapienieNaklejki]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[VDVC]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Wizy_SchengenPolska]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Wizy_SchengenPolska"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydaneWizySchengen]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Wizy_SchengenPolska]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -801,11 +801,6 @@
                       dataType="str"
                       length="50"
                       name="PSG" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ObywatelstwoSymbol]"
-                      dataType="wstr"
-                      length="100"
-                      name="ObywatelstwoSymbol" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenPolska]"
                       codePage="1250"
@@ -831,15 +826,20 @@
                       length="50"
                       name="ZastąpienieNaklejkiWizowejVD" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VDVC]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ObywatelstwoSymbol]"
                       dataType="wstr"
                       length="100"
-                      name="VDVC" />
+                      name="ObywatelstwoSymbol" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Wizy_SchengenPolska]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastapienieNaklejki]"
                       dataType="wstr"
                       length="100"
-                      name="Wizy_SchengenPolska" />
+                      name="ZastapienieNaklejki" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydaneWizySchengen]"
+                      dataType="wstr"
+                      length="100"
+                      name="WydaneWizySchengen" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
