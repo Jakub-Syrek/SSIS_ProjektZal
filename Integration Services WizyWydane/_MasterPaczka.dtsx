@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{73FD57CE-07BB-42D5-A5AC-ED379712ABFE}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{3C44BB8A-89C3-4477-A6E2-505B8688A4AA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -131,7 +131,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{4B5EF1B9-9D6C-41A6-A514-0932B4D976AE}"
+      DTS:DTSID="{6541C1C3-6DFE-4620-BC5B-4BE438458FE9}"
       DTS:From="Package\Execute Package Paczka_04"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
@@ -152,18 +152,18 @@
         <NodeLayout
           Size="211,42"
           Id="Package\Execute Package Paczka_01"
-          TopLeft="415,118" />
+          TopLeft="415,120" />
         <NodeLayout
           Size="212,42"
           Id="Package\Execute Package Paczka_02"
-          TopLeft="411,202" />
+          TopLeft="411,204" />
         <NodeLayout
           Size="211,42"
           Id="Package\Execute Package Paczka_03"
-          TopLeft="411,304" />
+          TopLeft="411,306" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="518.75,160">
+          TopLeft="518.75,162">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -185,7 +185,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="516.75,244">
+          TopLeft="516.75,246">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -208,10 +208,10 @@
         <NodeLayout
           Size="211,42"
           Id="Package\Execute Package Paczka_04"
-          TopLeft="411,406" />
+          TopLeft="411,408" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="516.5,346">
+          TopLeft="516.5,348">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -234,21 +234,21 @@
         <NodeLayout
           Size="211,42"
           Id="Package\Execute Package Paczka_05"
-          TopLeft="411,508" />
+          TopLeft="407,486" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="516.5,448">
+          TopLeft="514.5,450">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,36"
               Start="0,0"
-              End="0,52.5">
+              End="0,28.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,28.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

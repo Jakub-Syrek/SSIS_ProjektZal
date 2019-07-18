@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">QB</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAACAAAAAAAQZgAAAAEAACAAAAC3v0ua/WJFO5E66i6TO3l7ZX/c2mLr9gRvDJ1xvQtASgAAAAAOgAAAAAIAACAAAABfO2+8kd1mEAs3JhYRJ2xq3mOctEkOXpBgCRIeYsE3W5AAAAAap6NBPuSo1I5RFw5QvvGvljab+/6900ePsTyH96AOJdhtmEW7Cw1lFT4LAg42u7wy0gY770HyLAOGMWfUBB7vxJbOXj073JykCBFw+pmjx264XfprQAQ0TfXEWFxT855nF7t1yab71gznV6c0XHMMbicTu/q0LkludAYqn70rBWuqPWquah1XCUfCkEKhWCRAAAAAWRI6ZJlVZPOsyPhOMAggaK6m4lHLP0qaVcDWIdg4zVb2tluZTVLmub91IBHNP3B4ItY37ZiKygWXhgpTBkesRA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAACAAAAAAAQZgAAAAEAACAAAAAfnzG8yDTpuIr/W6juVBINSmyNsJoVME+Rgj2wy2j6jQAAAAAOgAAAAAIAACAAAAABZSqywW5F/iKu6e2/YZSguEbXGABar7Znn+aTGzk/zJAAAABKiuMHKd+zhzTS/no/8IQtLqB/NTbwHd9aPiOLpqxUdgEstu4tbosMhnoogoIBkUBXzqkOBEXVNIhvs98yNyVsadbhNPSYMSqwmstnTb3PNuGqy5f8fTREmhTjHDJXeVTaiUltbAmzcHS/xY+OUoWt6ZQI3ovCdmulEAEQYx2qIASXEKsI+8/4hEXYlSaetI9AAAAAs2KdmOhGEiStAGoXQyUGl3e9Fi3k9Kslrc4g3CtwTbFjiHMY8o6k8QX1dsQ8/6hUundB4lrKKpyt6rsnX67rhA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -366,10 +366,10 @@
                 <SSIS:Property SSIS:Name="Name">Paczka_01</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">6</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{1D8A7DD5-5400-41BE-9196-76DC7C6D112B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{398C54CE-D702-49D4-A072-3E60F445DFAB}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1819,10 +1819,10 @@
                 <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">4</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{73FD57CE-07BB-42D5-A5AC-ED379712ABFE}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{3C44BB8A-89C3-4477-A6E2-505B8688A4AA}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2621,10 +2621,10 @@
                 <SSIS:Property SSIS:Name="Name">Paczka_05</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{FF635668-7ABF-4DA0-A5AB-EEB8DB2459DC}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{CFD9CF6B-7415-448C-8B35-10FD441B1EDB}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
