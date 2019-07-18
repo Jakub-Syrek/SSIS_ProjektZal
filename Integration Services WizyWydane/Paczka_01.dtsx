@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Paczka_01"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{38B30C5F-310A-4C7A-91D0-75C0BC10B205}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{1D8A7DD5-5400-41BE-9196-76DC7C6D112B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -429,7 +429,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACWTsplPSmd4pZgjjYhH/5S6Eb8HtsweAsXLcv3pzEcigAAAAAOgAAAAAIAACAAAAAj49nZieCY4eSLdkzLavN7YuXaO7AjqkusFFVB5yTexiAAAAB1zz3lrvvaGPYw9gOwzDPUm3LedoyyAyXkFxP08Qa34UAAAAAFCGcEZF9xU5FwySz/N+R3TvC2jBso+mqUcWOVreqhZ/y0Grv5QRl7HwtCLizF2OtwXdm8A1eiJFWbh+chMFtX</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABhrmUGqwfKAhsPupV/RSvClb0TogU018fyptHapr66HQAAAAAOgAAAAAIAACAAAACt6y028XI9+2lBO/Bc3dwjsUlreIe+LSerQp788yMq5SAAAADCUejryz7/00ML3oxrrxolaNaQ9kGYuhsLJdDEviRTOUAAAACNt6+JU3YeSA+Kwcx9A+IY4ZOWiMEep5vzcf1jB6nLzE35i9HLm7iSvUd/dQVNDhtWwFsTujVz0gOxsI2oPYZU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -732,11 +732,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Destination"
+              refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination"
+              name="OLE DB Destination T01_WizyWydane"
               usesDispositions="true"
               version="4">
               <properties>
@@ -747,7 +747,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[OLE DB Destination]</property>
+                  name="OpenRowset">[dbo].[T01_WizyWydane]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -789,7 +789,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[serverqb.SSIS_db1.ExternalAdmin]"
                   connectionManagerRefId="Package.ConnectionManagers[serverqb.SSIS_db1.ExternalAdmin]"
                   description="The OLE DB runtime connection used to access the database."
@@ -797,108 +797,108 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[OSG]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].Columns[OSG]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="OSG"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OSG]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[OSG]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[OSG]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PSG]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].Columns[PSG]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="PSG"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PSG]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[PSG]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PSG]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Obywatelstwo]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].Columns[Obywatelstwo]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Obywatelstwo"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Obywatelstwo]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[Obywatelstwo]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Obywatelstwo]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Symbol]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].Columns[Symbol]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Symbol"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Symbol]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[Symbol]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Symbol]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WydaniewizySchengenZasięgTerytorialnyPaństwaSchengen]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].Columns[WydaniewizySchengenZasięgTerytorialnyPaństwaSchengen]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="WydaniewizySchengenZasięgTerytorialnyPaństwaSchengen"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydaniewizySchengenZasięgTerytorialnyPaństwaSchengen]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[WydaniewizySchengenZasięgTerytorialnyPaństwaSchengen]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[WydaniewizySchengenZasięgTerytorialnyPaństwaSchengen]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WydaniewizySchengenZasięgterytorialnyPolska]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].Columns[WydaniewizySchengenZasięgterytorialnyPolska]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="WydaniewizySchengenZasięgterytorialnyPolska"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydaniewizySchengenZasięgterytorialnyPolska]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[WydaniewizySchengenZasięgterytorialnyPolska]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[WydaniewizySchengenZasięgterytorialnyPolska]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ZastąpienieNaklejkiWizowejRodzajWizy-VD]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].Columns[ZastąpienieNaklejkiWizowejRodzajWizy-VD]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ZastąpienieNaklejkiWizowejRodzajWizy-VD"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejRodzajWizy-VD]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejRodzajWizy-VD]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ZastąpienieNaklejkiWizowejRodzajWizy-VD]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ZastąpienieNaklejkiWizowejRodzajwizy-VC]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].Columns[ZastąpienieNaklejkiWizowejRodzajwizy-VC]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ZastąpienieNaklejkiWizowejRodzajwizy-VC"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejRodzajwizy-VC]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejRodzajwizy-VC]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ZastąpienieNaklejkiWizowejRodzajwizy-VC]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OSG]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[OSG]"
                       dataType="wstr"
                       length="50"
                       name="OSG" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PSG]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[PSG]"
                       dataType="wstr"
                       length="50"
                       name="PSG" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Obywatelstwo]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[Obywatelstwo]"
                       dataType="wstr"
                       length="50"
                       name="Obywatelstwo" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Symbol]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[Symbol]"
                       dataType="wstr"
                       length="50"
                       name="Symbol" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydaniewizySchengenZasięgTerytorialnyPaństwaSchengen]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[WydaniewizySchengenZasięgTerytorialnyPaństwaSchengen]"
                       dataType="wstr"
                       length="50"
                       name="WydaniewizySchengenZasięgTerytorialnyPaństwaSchengen" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydaniewizySchengenZasięgterytorialnyPolska]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[WydaniewizySchengenZasięgterytorialnyPolska]"
                       dataType="wstr"
                       length="50"
                       name="WydaniewizySchengenZasięgterytorialnyPolska" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejRodzajWizy-VD]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejRodzajWizy-VD]"
                       dataType="wstr"
                       length="50"
                       name="ZastąpienieNaklejkiWizowejRodzajWizy-VD" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejRodzajwizy-VC]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejRodzajwizy-VC]"
                       dataType="wstr"
                       length="50"
                       name="ZastąpienieNaklejkiWizowejRodzajwizy-VC" />
@@ -907,22 +907,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -934,7 +934,7 @@
           <paths>
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
@@ -1025,8 +1025,8 @@
           Id="Package\Data Flow Task\Flat File Source"
           TopLeft="466.5,91.5" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
+          Size="258,42"
+          Id="Package\Data Flow Task\OLE DB Destination T01_WizyWydane"
           TopLeft="441.5,203.5" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
@@ -1034,9 +1034,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-15,70"
+              EndConnector="28.5,70"
               Start="0,0"
-              End="-15,62.5">
+              End="28.5,62.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -1045,15 +1045,15 @@
                   <mssgle:CubicBezierSegment
                     Point1="0,31"
                     Point2="0,35"
-                    Point3="-4,35" />
+                    Point3="4,35" />
                   <mssgle:LineSegment
-                    End="-11,35" />
+                    End="24.5,35" />
                   <mssgle:CubicBezierSegment
-                    Point1="-11,35"
-                    Point2="-15,35"
-                    Point3="-15,39" />
+                    Point1="24.5,35"
+                    Point2="28.5,35"
+                    Point3="28.5,39" />
                   <mssgle:LineSegment
-                    End="-15,62.5" />
+                    End="28.5,62.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1066,7 +1066,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow Task\OLE DB Destination T01_WizyWydane">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
