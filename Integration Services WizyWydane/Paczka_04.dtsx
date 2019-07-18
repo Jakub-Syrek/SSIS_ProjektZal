@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Paczka_04"
   DTS:PackageType="5"
-  DTS:VersionBuild="16"
-  DTS:VersionGUID="{39E35D9A-9F1D-4547-AEFA-B329F4F7E883}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{9EE08433-594C-41D2-ACCF-B4997ECFDEF4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -119,7 +119,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACt2f6RD/ecrNdgEQjt0yTpaiwWgbSFzLgForCxpROlZgAAAAAOgAAAAAIAACAAAAC++1E2Kwhr7yqGLbS5/UXbeQcimuHVS9Xwslg0Bwno7iAAAABy0k0Dxl6VtpILbdDsN6jqacHCZizFBLO/hK4iZE55KUAAAABF3DMjxO25TPgVIc40oH78+ZTQFmECLNXmCTBZSOKx7coCthNTvRm9gvW90jl7eDhrEK0l2t7Kk+HM67VU40SR</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADxcKoLU3qYjIr/KhDE4T4SZ9fixO2TJqVG4G2PZUp4sQAAAAAOgAAAAAIAACAAAABLWJBZhE1kQegBSM/rZCAky3daVvRYzpVtWxjkF5SCOCAAAAC5h0KAg2clvJQ0tdcR7/T/bjri2NcDgVrWkPGS0YEhW0AAAACO20PD6hdLVXN6w+RdXvAfZY5SoMPEsYOncpK3Og4KRyQZt37tSagcQR7Pq49S5SwVgCfA9JIHYtUa/BnhDWbs</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -198,10 +198,11 @@
                     <inputColumn
                       refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[OSG]"
                       cachedCodepage="1250"
+                      cachedComparisonFlags="5"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="OSG"
-                      cachedSortKeyPosition="1"
+                      cachedSortKeyPosition="2"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[OSG]"
@@ -224,9 +225,11 @@
                     <inputColumn
                       refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[PSG]"
                       cachedCodepage="1250"
+                      cachedComparisonFlags="5"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="PSG"
+                      cachedSortKeyPosition="1"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[PSG]"
@@ -259,49 +262,49 @@
                   synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[VDVC]"
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ZastapienieNaklejki]"
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      length="100"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[VDVC]"
-                      name="VDVC"
+                      length="103"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ZastapienieNaklejki]"
+                      name="ZastapienieNaklejki"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVD]} + #{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVC]}</property>
+                          name="Expression">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVD]} + "---" + #{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVC]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">[ZastąpienieNaklejkiWizowejVD] + [ZastąpienieNaklejkiWizowejVC]</property>
+                          name="FriendlyExpression">[ZastąpienieNaklejkiWizowejVD] + "---" + [ZastąpienieNaklejkiWizowejVC]</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Wizy_SchengenPolska]"
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[WydaneWizySchengen]"
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      length="100"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Wizy_SchengenPolska]"
-                      name="Wizy_SchengenPolska"
+                      length="103"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[WydaneWizySchengen]"
+                      name="WydaneWizySchengen"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenSchengen]} + #{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenPolska]}</property>
+                          name="Expression">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenSchengen]} + "---" + #{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenPolska]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">WydanieWizySchengenSchengen + WydanieWizySchengenPolska</property>
+                          name="FriendlyExpression">WydanieWizySchengenSchengen + "---" + WydanieWizySchengenPolska</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -309,7 +312,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      length="100"
+                      length="103"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ObywatelstwoSymbol]"
                       name="ObywatelstwoSymbol"
                       truncationRowDisposition="FailComponent">
@@ -318,13 +321,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Obywatelstwo]} + #{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Symbol]}</property>
+                          name="Expression">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Obywatelstwo]} + "---" + #{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Symbol]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">Obywatelstwo + Symbol</property>
+                          name="FriendlyExpression">Obywatelstwo + "---" + Symbol</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -660,7 +663,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[T04_DerivedColumns]</property>
+                  name="OpenRowset">[dbo].[T04_DerivedColumns]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -694,7 +697,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                  name="FastLoadOptions">TABLOCK</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -719,18 +722,21 @@
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[OSG]"
                       cachedCodepage="1250"
+                      cachedComparisonFlags="5"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="OSG"
-                      cachedSortKeyPosition="1"
+                      cachedSortKeyPosition="2"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OSG]"
                       lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[OSG]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PSG]"
                       cachedCodepage="1250"
+                      cachedComparisonFlags="5"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="PSG"
+                      cachedSortKeyPosition="1"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PSG]"
                       lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[PSG]" />
                     <inputColumn
@@ -766,26 +772,26 @@
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVD]"
                       lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVD]" />
                     <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ZastapienieNaklejki]"
+                      cachedDataType="wstr"
+                      cachedLength="103"
+                      cachedName="ZastapienieNaklejki"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastapienieNaklejki]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ZastapienieNaklejki]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WydaneWizySchengen]"
+                      cachedDataType="wstr"
+                      cachedLength="103"
+                      cachedName="WydaneWizySchengen"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydaneWizySchengen]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[WydaneWizySchengen]" />
+                    <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ObywatelstwoSymbol]"
                       cachedDataType="wstr"
-                      cachedLength="100"
+                      cachedLength="103"
                       cachedName="ObywatelstwoSymbol"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ObywatelstwoSymbol]"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ObywatelstwoSymbol]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VDVC]"
-                      cachedDataType="wstr"
-                      cachedLength="100"
-                      cachedName="VDVC"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastapienieNaklejki]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[VDVC]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Wizy_SchengenPolska]"
-                      cachedDataType="wstr"
-                      cachedLength="100"
-                      cachedName="Wizy_SchengenPolska"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydaneWizySchengen]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Wizy_SchengenPolska]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -826,20 +832,20 @@
                       length="50"
                       name="ZastąpienieNaklejkiWizowejVD" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ObywatelstwoSymbol]"
-                      dataType="wstr"
-                      length="100"
-                      name="ObywatelstwoSymbol" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastapienieNaklejki]"
                       dataType="wstr"
-                      length="100"
+                      length="103"
                       name="ZastapienieNaklejki" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydaneWizySchengen]"
                       dataType="wstr"
-                      length="100"
+                      length="103"
                       name="WydaneWizySchengen" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ObywatelstwoSymbol]"
+                      dataType="wstr"
+                      length="103"
+                      name="ObywatelstwoSymbol" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -902,11 +908,11 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
+                          name="NewComparisonFlags">5</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
+                          name="NewSortKeyPosition">2</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -920,11 +926,11 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
+                          name="NewComparisonFlags">5</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
+                          name="NewSortKeyPosition">1</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -1048,11 +1054,12 @@
                     <outputColumn
                       refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[OSG]"
                       codePage="1250"
+                      comparisonFlags="5"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[OSG]"
                       name="OSG"
-                      sortKeyPosition="1">
+                      sortKeyPosition="2">
                       <properties>
                         <property
                           containsID="true"
@@ -1064,10 +1071,12 @@
                     <outputColumn
                       refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[PSG]"
                       codePage="1250"
+                      comparisonFlags="5"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[PSG]"
-                      name="PSG">
+                      name="PSG"
+                      sortKeyPosition="1">
                       <properties>
                         <property
                           containsID="true"
@@ -1218,39 +1227,47 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="98,42"
+          Id="Package\Data Flow Task\Sort"
+          TopLeft="299,151" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="313,264" />
+        <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task\Flat File Source"
           TopLeft="489,95" />
         <NodeLayout
-          Size="98,42"
-          Id="Package\Data Flow Task\Sort"
-          TopLeft="526,184" />
+          Size="171,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="310.5,357.5" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="564.5,137">
+          Id="Package\Data Flow Task.Paths[Sort Output]"
+          TopLeft="348,193">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="10.5,47"
+              EndConnector="42,71"
               Start="0,0"
-              End="10.5,39.5">
+              End="42,63.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.5" />
+                    End="0,31.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.5"
-                    Point2="0,23.5"
-                    Point3="4,23.5" />
+                    Point1="0,31.5"
+                    Point2="0,35.5"
+                    Point3="4,35.5" />
                   <mssgle:LineSegment
-                    End="6.5,23.5" />
+                    End="38,35.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="6.5,23.5"
-                    Point2="10.5,23.5"
-                    Point3="10.5,27.5" />
+                    Point1="38,35.5"
+                    Point2="42,35.5"
+                    Point3="42,39.5" />
                   <mssgle:LineSegment
-                    End="10.5,39.5" />
+                    End="42,63.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1259,40 +1276,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="309.5,357.5" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Data Flow Task\Derived Column"
-          TopLeft="313,264" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output]"
-          TopLeft="575,226">
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="489,116">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-185,38"
+              EndConnector="-92,56"
               Start="0,0"
-              End="-185,30.5">
+              End="-84.5,56">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15" />
+                    End="-42,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15"
-                    Point2="0,19"
-                    Point3="-4,19" />
+                    Point1="-42,0"
+                    Point2="-46,0"
+                    Point3="-46,4" />
                   <mssgle:LineSegment
-                    End="-181,19" />
+                    End="-46,52" />
                   <mssgle:CubicBezierSegment
-                    Point1="-181,19"
-                    Point2="-185,19"
-                    Point3="-185,23" />
+                    Point1="-46,52"
+                    Point2="-46,56"
+                    Point3="-50,56" />
                   <mssgle:LineSegment
-                    End="-185,30.5" />
+                    End="-84.5,56" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1303,7 +1312,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="392.5,306">
+          TopLeft="393,306">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
