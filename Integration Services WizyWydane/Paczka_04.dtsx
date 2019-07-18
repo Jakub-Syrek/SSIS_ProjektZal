@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="7/18/2019 3:55:45 PM"
+  DTS:CreationDate="7/18/2019 5:06:54 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="QB"
   DTS:CreatorName="QB\jaqbs"
-  DTS:DTSID="{C9B1F129-B0DC-470B-8715-5E1DCA38F790}"
+  DTS:DTSID="{B8DEDF3F-1519-4F33-8FC8-2DB3E03A0C47}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.1300.371"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Paczka_03"
+  DTS:ObjectName="Paczka_04"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{DD459202-3BB0-4EEF-A945-DB10112403C8}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{E1FD1291-592F-4C53-BB90-8E1C05576367}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -111,7 +111,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_db1.ExternalAdmin 1]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{469351C6-1658-4082-9944-2A2BCEC75205}"
+      DTS:DTSID="{9B077985-03A7-4459-A17C-9882ED67A1B9}"
       DTS:ObjectName="SERVERQB.SSIS_db1.ExternalAdmin 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -119,22 +119,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC4Rn9O6kMjmDg1pFzF0vdd9kY3zrXUhI36c3yCvYi0gwAAAAAOgAAAAAIAACAAAADdol8ZvJAS/0TmXeDFbrt7sa9UenN5G6W0zMOH2Nz5fSAAAAA/RDJFnoTeFJc54ZkVL9fy8cBzdIFI5/ktjbqISTqmEkAAAAAOnhZ/GCc+5Hd5hfRPm8cz5j1aOhpIg+HqNFD88C2Dg5k1zNzXyB02q/PlVrvUR7hjoYKsQEiBLwcREviqZYnu</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_db1.ExternalAdmin 2]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{3A8AEE51-EA62-4EF6-8592-EABE2CA467A4}"
-      DTS:ObjectName="SERVERQB.SSIS_db1.ExternalAdmin 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Initial Catalog=SSIS_db1;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABSWZB5msZ+v6BqRY4YOcFEvFaWg7xl2BKjtu6UA5S7SQAAAAAOgAAAAAIAACAAAAALRAkX41agIS43XI9CIvNM3rCucWAmnD5TImoabRv+USAAAADNYG5CweMzilDm0+72N7fNUr09SKwq1kf4UAbVExloKUAAAACPegaYoMNXOPwxFu0Rv8kx7vc4ZogaFEESCTCEXMP9W0nVug/Ni7jGBnPlUHYi8xsScS/edjVfyTUAhIhkZ+RU</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAYmpwlzlejPYRDDDRnw11maamjG3EY4F1+iklI8X9R7wAAAAAOgAAAAAIAACAAAACSZ/Aw47R4hQViTBReQj9aWcj0L9vOdfRk0Fj4a1FleyAAAAC+37jaqs36YppnK3Kfo5iyexCBihE7sShmhzJEsCDfvUAAAAB+lCBHFD72gxINLYYnFS+YRofccGKPRlpxFUdObMeTZzLRPXI3mUmVnYtzT689nMSjnEQM2NXU016Ok6k7UQLf</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -145,7 +130,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{2049DEDC-DAAE-4F3C-85FE-D29D84389E65}"
+      DTS:DTSID="{5C2A4788-C8AD-4179-862C-ED4FB26F8305}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -156,117 +141,213 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Conditional Split"
-              componentClassID="Microsoft.ConditionalSplit"
-              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
-              name="Conditional Split"
+              refId="Package\Data Flow Task\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
-                  description="Input to the Conditional Split Transformation"
-                  name="Conditional Split Input">
+                  refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input].Columns[OSG]"
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Obywatelstwo]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Obywatelstwo"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Obywatelstwo]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Symbol]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Symbol"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Symbol]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[WydanieWizySchengenSchengen]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="WydanieWizySchengenSchengen"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenSchengen]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[WydanieWizySchengenPolska]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="WydanieWizySchengenPolska"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenPolska]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[ZastąpienieNaklejkiWizowejVD]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ZastąpienieNaklejkiWizowejVD"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVD]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[ZastąpienieNaklejkiWizowejVC]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ZastąpienieNaklejkiWizowejVC"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVC]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[OSG]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="OSG"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[OSG]" />
+                      cachedSortKeyPosition="1"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[OSG]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[OSG]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">OSG</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[PSG]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PSG"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[PSG]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[PSG]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">PSG</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Conditional Split.Outputs[Case 1]"
-                  description="Output 1 of the Conditional Split Transformation"
-                  errorOrTruncationOperation="Computation"
-                  errorRowDisposition="FailComponent"
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
                   exclusionGroup="1"
-                  name="Case 1"
-                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
-                  truncationRowDisposition="FailComponent">
-                  <properties>
-                    <property
-                      containsID="true"
-                      dataType="System.String"
-                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">(#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[OSG]} == "MOSG") || (#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[OSG]} == "NOSG")</property>
-                    <property
-                      containsID="true"
-                      dataType="System.String"
-                      description="Specifies the friendly version of the expression. This expression version uses column names."
-                      expressionType="Notify"
-                      name="FriendlyExpression">(OSG == "MOSG") || (OSG == "NOSG")</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
-                      name="EvaluationOrder">0</property>
-                  </properties>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Conditional Split.Outputs[Case 2]"
-                  description="Output 2 of the Conditional Split Transformation"
-                  errorOrTruncationOperation="Computation"
-                  errorRowDisposition="FailComponent"
-                  exclusionGroup="1"
-                  name="Case 2"
-                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
-                  truncationRowDisposition="FailComponent">
-                  <properties>
-                    <property
-                      containsID="true"
-                      dataType="System.String"
-                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[OSG]} != "MOSG" &amp;&amp; #{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[OSG]} != "NOSG"</property>
-                    <property
-                      containsID="true"
-                      dataType="System.String"
-                      description="Specifies the friendly version of the expression. This expression version uses column names."
-                      expressionType="Notify"
-                      name="FriendlyExpression">OSG != "MOSG" &amp;&amp; OSG != "NOSG"</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
-                      name="EvaluationOrder">1</property>
-                  </properties>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Default Output]"
-                  description="Default Output of the Conditional Split Transformation"
-                  exclusionGroup="1"
-                  name="Conditional Split Default Output"
-                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]">
-                  <properties>
-                    <property
-                      dataType="System.Boolean"
-                      name="IsDefaultOut">true</property>
-                  </properties>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output]"
-                  description="Error Output of the Conditional Split Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Conditional Split Error Output"
-                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]">
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[VDVC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[VDVC]"
+                      name="VDVC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVD]} + #{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVC]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">[ZastąpienieNaklejkiWizowejVD] + [ZastąpienieNaklejkiWizowejVC]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Wizy_SchengenPolska]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Wizy_SchengenPolska]"
+                      name="Wizy_SchengenPolska"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenSchengen]} + #{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenPolska]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">WydanieWizySchengenSchengen + WydanieWizySchengenPolska</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ObywatelstwoSymbol]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ObywatelstwoSymbol]"
+                      name="ObywatelstwoSymbol"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Obywatelstwo]} + #{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Symbol]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">Obywatelstwo + Symbol</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -564,11 +645,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG"
+              refId="Package\Data Flow Task\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination --&gt; T03_MOSG"
+              name="OLE DB Destination"
               usesDispositions="true"
               version="4">
               <properties>
@@ -579,7 +660,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[T03_MOSG]</property>
+                  name="OpenRowset">[dbo].[T04_DerivedColumns]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -621,7 +702,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Connections[OleDbConnection]"
+                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[SERVERQB.SSIS_db1.ExternalAdmin 1]"
                   connectionManagerRefId="Package.ConnectionManagers[SERVERQB.SSIS_db1.ExternalAdmin 1]"
                   description="The OLE DB runtime connection used to access the database."
@@ -629,134 +710,157 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input]"
+                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].Columns[PSG]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[OSG]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="OSG"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OSG]"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[OSG]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PSG]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="PSG"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[PSG]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PSG]" />
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PSG]"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[PSG]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].Columns[Obywatelstwo]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Obywatelstwo"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[Obywatelstwo]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Obywatelstwo]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].Columns[Symbol]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Symbol"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[Symbol]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Symbol]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].Columns[WydanieWizySchengenSchengen]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="WydanieWizySchengenSchengen"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenSchengen]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[WydanieWizySchengenSchengen]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].Columns[WydanieWizySchengenPolska]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WydanieWizySchengenPolska]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="WydanieWizySchengenPolska"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenPolska]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[WydanieWizySchengenPolska]" />
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenPolska]"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenPolska]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].Columns[ZastąpienieNaklejkiWizowejVD]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="ZastąpienieNaklejkiWizowejVD"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVD]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ZastąpienieNaklejkiWizowejVD]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].Columns[ZastąpienieNaklejkiWizowejVC]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ZastąpienieNaklejkiWizowejVC]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ZastąpienieNaklejkiWizowejVC"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVC]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ZastąpienieNaklejkiWizowejVC]" />
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVC]"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVC]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WydanieWizySchengenSchengen]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="WydanieWizySchengenSchengen"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenSchengen]"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenSchengen]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ZastąpienieNaklejkiWizowejVD]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ZastąpienieNaklejkiWizowejVD"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVD]"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVD]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VDVC]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="VDVC"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VDVC]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[VDVC]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Wizy_SchengenPolska]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Wizy_SchengenPolska"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Wizy_SchengenPolska]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Wizy_SchengenPolska]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ObywatelstwoSymbol]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="ObywatelstwoSymbol"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ObywatelstwoSymbol]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ObywatelstwoSymbol]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[PSG]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OSG]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="OSG" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PSG]"
                       codePage="1250"
                       dataType="str"
                       length="50"
                       name="PSG" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[Obywatelstwo]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="Obywatelstwo" />
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ObywatelstwoSymbol]"
+                      dataType="wstr"
+                      length="100"
+                      name="ObywatelstwoSymbol" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[Symbol]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="Symbol" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenSchengen]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="WydanieWizySchengenSchengen" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenPolska]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenPolska]"
                       codePage="1250"
                       dataType="str"
                       length="50"
                       name="WydanieWizySchengenPolska" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVD]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVC]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="ZastąpienieNaklejkiWizowejVC" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenSchengen]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="WydanieWizySchengenSchengen" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVD]"
                       codePage="1250"
                       dataType="str"
                       length="50"
                       name="ZastąpienieNaklejkiWizowejVD" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVC]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="ZastąpienieNaklejkiWizowejVC" />
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VDVC]"
+                      dataType="wstr"
+                      length="100"
+                      name="VDVC" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Wizy_SchengenPolska]"
+                      dataType="wstr"
+                      length="100"
+                      name="Wizy_SchengenPolska" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -765,201 +869,303 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-              description="OLE DB Destination"
-              name="OLE DB Destination --&gt; T03_NOSG"
-              usesDispositions="true"
-              version="4">
+              refId="Package\Data Flow Task\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
               <properties>
                 <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[T03_NOSG]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
                   dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
                 <property
                   dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">3</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
               </properties>
-              <connections>
-                <connection
-                  refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[SERVERQB.SSIS_db1.ExternalAdmin 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[SERVERQB.SSIS_db1.ExternalAdmin 1]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input]"
-                  errorOrTruncationOperation="Insert"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="OLE DB Destination Input">
+                  refId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].Columns[PSG]"
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[OSG]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="OSG"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[OSG]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[PSG]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="PSG"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[PSG]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PSG]" />
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PSG]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].Columns[Obywatelstwo]"
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Obywatelstwo]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Obywatelstwo"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[Obywatelstwo]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Obywatelstwo]" />
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Obywatelstwo]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].Columns[Symbol]"
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Symbol]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Symbol"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[Symbol]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Symbol]" />
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Symbol]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].Columns[WydanieWizySchengenSchengen]"
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[WydanieWizySchengenSchengen]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="WydanieWizySchengenSchengen"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenSchengen]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[WydanieWizySchengenSchengen]" />
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[WydanieWizySchengenSchengen]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].Columns[WydanieWizySchengenPolska]"
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[WydanieWizySchengenPolska]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="WydanieWizySchengenPolska"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenPolska]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[WydanieWizySchengenPolska]" />
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[WydanieWizySchengenPolska]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].Columns[ZastąpienieNaklejkiWizowejVD]"
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[ZastąpienieNaklejkiWizowejVD]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ZastąpienieNaklejkiWizowejVD"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVD]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ZastąpienieNaklejkiWizowejVD]" />
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ZastąpienieNaklejkiWizowejVD]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].Columns[ZastąpienieNaklejkiWizowejVC]"
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[ZastąpienieNaklejkiWizowejVC]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ZastąpienieNaklejkiWizowejVC"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVC]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ZastąpienieNaklejkiWizowejVC]" />
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ZastąpienieNaklejkiWizowejVC]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[PSG]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="PSG" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[Obywatelstwo]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="Obywatelstwo" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[Symbol]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="Symbol" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenSchengen]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="WydanieWizySchengenSchengen" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[WydanieWizySchengenPolska]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="WydanieWizySchengenPolska" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVD]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="ZastąpienieNaklejkiWizowejVD" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input].ExternalColumns[ZastąpienieNaklejkiWizowejVC]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="ZastąpienieNaklejkiWizowejVC" />
-                  </externalMetadataColumns>
+                  <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Outputs[OLE DB Destination Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input]">
+                  refId="Package\Data Flow Task\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[OSG]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[OSG]"
+                      name="OSG"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[OSG]}</property>
+                      </properties>
+                    </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[PSG]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[PSG]"
+                      name="PSG">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PSG]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Obywatelstwo]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Obywatelstwo]"
+                      name="Obywatelstwo">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Obywatelstwo]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Symbol]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Symbol]"
+                      name="Symbol">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Symbol]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenSchengen]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenSchengen]"
+                      name="WydanieWizySchengenSchengen">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[WydanieWizySchengenSchengen]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenPolska]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[WydanieWizySchengenPolska]"
+                      name="WydanieWizySchengenPolska">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[WydanieWizySchengenPolska]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVD]"
+                      name="ZastąpienieNaklejkiWizowejVD">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ZastąpienieNaklejkiWizowejVD]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVC]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[ZastąpienieNaklejkiWizowejVC]"
+                      name="ZastąpienieNaklejkiWizowejVC">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ZastąpienieNaklejkiWizowejVC]}</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -968,20 +1174,20 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Case 1]"
-              endId="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG.Inputs[OLE DB Destination Input]"
-              name="Case 1"
-              startId="Package\Data Flow Task\Conditional Split.Outputs[Case 1]" />
-            <path
-              refId="Package\Data Flow Task.Paths[Case 2]"
-              endId="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG.Inputs[OLE DB Destination Input]"
-              name="Case 2"
-              startId="Package\Data Flow Task\Conditional Split.Outputs[Case 2]" />
+              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+              endId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output]"
+              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\Sort.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1002,7 +1208,7 @@
         <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task"
-          TopLeft="475.5,145.5" />
+          TopLeft="474.5,200.5" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -1010,49 +1216,83 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="245,42"
-          Id="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG"
-          TopLeft="624.5,394.5" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="453.5,124.5" />
+          TopLeft="489,95" />
         <NodeLayout
-          Size="246,42"
-          Id="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG"
-          TopLeft="345.5,392.5" />
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Data Flow Task\Conditional Split"
-          TopLeft="490,267" />
+          Size="98,42"
+          Id="Package\Data Flow Task\Sort"
+          TopLeft="526,184" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="529,166.5">
+          TopLeft="564.5,137">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="38.5,100.5"
+              EndConnector="10.5,47"
               Start="0,0"
-              End="38.5,93">
+              End="10.5,39.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.25" />
+                    End="0,19.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,46.25"
-                    Point2="0,50.25"
-                    Point3="4,50.25" />
+                    Point1="0,19.5"
+                    Point2="0,23.5"
+                    Point3="4,23.5" />
                   <mssgle:LineSegment
-                    End="34.5,50.25" />
+                    End="6.5,23.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="34.5,50.25"
-                    Point2="38.5,50.25"
-                    Point3="38.5,54.25" />
+                    Point1="6.5,23.5"
+                    Point2="10.5,23.5"
+                    Point3="10.5,27.5" />
                   <mssgle:LineSegment
-                    End="38.5,93" />
+                    End="10.5,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="309.5,357.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="313,264" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output]"
+          TopLeft="575,226">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-185,38"
+              Start="0,0"
+              End="-185,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15"
+                    Point2="0,19"
+                    Point3="-4,19" />
+                  <mssgle:LineSegment
+                    End="-181,19" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-181,19"
+                    Point2="-185,19"
+                    Point3="-185,23" />
+                  <mssgle:LineSegment
+                    End="-185,30.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1062,95 +1302,32 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Case 2]"
-          TopLeft="592,309">
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="392.5,306">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="155,85.5"
+              EndConnector="0,51.5"
               Start="0,0"
-              End="155,78">
+              End="0,44">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.7241379310345" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.7241379310345"
-                    Point2="0,34.7241379310345"
-                    Point3="4,34.7241379310345" />
-                  <mssgle:LineSegment
-                    End="151,34.7241379310345" />
-                  <mssgle:CubicBezierSegment
-                    Point1="151,34.7241379310345"
-                    Point2="155,34.7241379310345"
-                    Point3="155,38.7241379310345" />
-                  <mssgle:LineSegment
-                    End="155,78" />
+                    End="0,44" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="62.0963671875,39.7241379310345,30.807265625,9.5732421875"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Case 1]"
-          TopLeft="543,309">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-74.5,83.5"
-              Start="0,0"
-              End="-74.5,76">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.911877394636" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.911877394636"
-                    Point2="0,33.911877394636"
-                    Point3="-4,33.911877394636" />
-                  <mssgle:LineSegment
-                    End="-70.5,33.911877394636" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-70.5,33.911877394636"
-                    Point2="-74.5,33.911877394636"
-                    Point3="-74.5,37.911877394636" />
-                  <mssgle:LineSegment
-                    End="-74.5,76" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-52.4680859375,38.911877394636,30.436171875,9.5537109375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination --&gt; T03_NOSG">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination --&gt; T03_MOSG">
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
