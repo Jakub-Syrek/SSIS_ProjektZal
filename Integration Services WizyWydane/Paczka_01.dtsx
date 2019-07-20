@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Paczka_01"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{1F6356FA-0798-42C7-A9AE-EF9311709DE1}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{A644FACC-BA50-4836-80CB-2B6C73511602}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -429,7 +429,22 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABHnpZd/FgeZWhYpKYjRQ28L7DtFHn8JgUgTafEfAVWlAAAAAAOgAAAAAIAACAAAABdGwC0+6hm5/lRkHjQwTxODLoJdnGohcKYjaQ/uuWvNyAAAACxXTSfQthdqIPP7Jy884iu6Xu35QYizkJs+nbquxBl6UAAAAAZZj1iNCz895LWsk7G/31Apc5NxRmw41uH6+l6Bstg+7Ae3gkvd4nhqZ5aQmvFa0Ej+yhdSsQDxVwqR8yGsRZq</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAWAPitOgKlf5Yhc7B9/mqRDK5cYtz8i2dAvWkGWwDFaAAAAAAOgAAAAAIAACAAAAC+9aRFZ9cd7SFWJ8VpR8sf7cZBFx2/diNzIYiBw9HLxCAAAABk+0x1XYwWTbstygVsUFxsJnSSSu1WWm72GjkWAc6twUAAAADkbXw2HcDdYQfQ7zt+do/97s/qfCb8/WYRAZ3jG01ECawPoTxT7Y/h3C+8L8k8tNHTnLqp4d5s8bNDaHzk+kv2</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SERVERQB.SSIS_dba.ExternalAdmin]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{585B9EB4-754F-40AB-9B41-4CC4DBD4D35D}"
+      DTS:ObjectName="SERVERQB.SSIS_dba.ExternalAdmin">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SERVERQB;User ID=ExternalAdmin;Initial Catalog=SSIS_dba;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABEFETzpu0STbMHmNWjrZAhsjJViUo43CXi8T5/CGSeoAAAAAAOgAAAAAIAACAAAACmI+BxzeHc4xNnKnSdyaxHsh4vAsjPJpirASjxyhj3rSAAAADOjP1bj6tKp5DQVfMXrUdJDQwZXKEBpWUj45t09rVvdEAAAAD0HWID/vVmb6LthSc2+XUX6XWY16JTkaU8/fqfXU85IsZdnPngPNwynngihzP5O4GcgbiMxNwaU7zZ0g0F0Ffb</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -790,8 +805,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination T01_WizyWydane.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[serverqb.SSIS_db1.ExternalAdmin]"
-                  connectionManagerRefId="Package.ConnectionManagers[serverqb.SSIS_db1.ExternalAdmin]"
+                  connectionManagerID="{BADF7E85-AD61-403E-B05F-5A177193F7B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[SERVERQB.SSIS_db1.ExternalAdmin]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
