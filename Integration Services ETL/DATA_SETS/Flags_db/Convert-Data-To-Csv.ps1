@@ -9,6 +9,8 @@ Get-ChildItem $dir -Include *.csv -Recurse  -Exclude headers*.csv | Remove-Item 
 foreach($file in (Get-ChildItem $dir )) {
   if ($file.FullName.Contains("data"))
   {
+  #(Get-Culture).TextInfo.ListSeparator.ToString()
+ 
   $newname = $file.FullName -replace '\.data$', '.csv'  
   $ExcelWB = new-object -comobject excel.application
   $Workbook = $ExcelWB.Workbooks.Open($file.FullName) 
@@ -42,7 +44,7 @@ foreach($file in (Get-ChildItem $dir )) {
     else
     {
       $output = $dir + "\1" + $file 
-      (Get-Content $file.FullName) | Foreach-Object {$_ -replace '"', ''}|  Out-File $output -Encoding ascii
+      (Get-Content $file.FullName) | Foreach-Object {$_ -replace '"', ''} | Foreach-Object {$_ -replace ' ', ''} | Foreach-Object {$_ -replace ', ', ','} | Out-File $output -Encoding default -Verbose
       Copy $output $file.FullName
       Remove-Item $output -Force 
       Write-Host $file " cleansed from quotations "

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package2 DB Iris"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{F1E26304-084A-4ECB-8DDB-1D4E2F312950}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{3AA9CA1A-2A90-4103-ABED-0328773E9CE8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -93,7 +93,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADuij5Qin1bdf8ohb1MPccbskhfafAtuJ3hF9IeL11o+wAAAAAOgAAAAAIAACAAAAAxtyeAGUeh5NCscFk1SDruAEnB8tK2czAnU+OzoPJUwiAAAAAjtBqKvWZfWF3sigDZVo4k93VGW+r0uvuha6fG2V3ydUAAAAB/6/IzzzRNUIJkPqKqY9bUs/0RRIf857mpc5xoJk1C7mBbp+X1M69fROlbbkzwc4Fk6d/pt1SK8YExsPH9qO2C</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoEdkom+fp0u05moMIv8jZwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC+VLkm9dlReDRkxChmCaB3ePe1CG6E9QREddIj8cJQBgAAAAAOgAAAAAIAACAAAACHruHKrIH4QuDlVjReKCFaJN/kbIj5man9bwjD5LjxOyAAAAAUJLV3H1y6CdmuNlb/MxkfCYRCxt0u1jCTRfkdu5khAEAAAAArfLUlCghsciIRyXvfIWPr6vgoERZMXL+1P/O4MVpzIiyeObxeRuni1CYYGujOUUVuPP1khPoyljB1fUXfJcg5</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
