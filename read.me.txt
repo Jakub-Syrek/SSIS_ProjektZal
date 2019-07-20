@@ -1,0 +1,2 @@
+projekt do zadania : "Integration Services ETL"
+cale repo wraz z kolejnym zadaniem: https://github.com/Jakub-Syrek/SSIS_ProjektZal
